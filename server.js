@@ -2,6 +2,14 @@ var express = require('express');
 var app = express();
 var fs = require("fs");
 
+
+app.get('/listUsers', function (req, res) {
+   fs.readFile("./" + "users.json", 'utf8', function (err, data) {
+       console.log( data );
+       res.end( data );
+   });
+})
+
 app.get('/:id', function (req, res) {
    // First read existing users.
    fs.readFile("./" + "users.json", 'utf8', function (err, data) {
