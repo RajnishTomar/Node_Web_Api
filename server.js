@@ -14,11 +14,11 @@ var user = {
 
 app.get('/listUsers', function (req, res) {
 
-res.end("Hello");
-   // fs.readFile("./" + "users.json", 'utf8', function (err, data) {
-//        console.log( data );
-//        res.end( data );
-//    });
+//res.end("Hello");
+   fs.readFile("./" + "users.json", 'utf8', function (err, data) {
+       console.log( data );
+       res.end( data );
+   });
 })
 
 app.get('/:id', function (req, res) {
