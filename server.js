@@ -13,7 +13,6 @@ var user = {
    }
 }
 
-
 // parse application/json
     app.use(bodyParser.json()); 
 
