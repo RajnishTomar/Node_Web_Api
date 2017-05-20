@@ -60,13 +60,14 @@ app.post('/addUser', function (req, res) {
             data[key] = reqJson[i];
        }
        
-       console.log( data );
        json = JSON.stringify(data);
        fs.writeFile("./" + "users.json", json, 'utf8',function(err){
           if(err) throw err;
        });
        
-       res.end( JSON.stringify(data));
+       console.log( data );
+       var dict = {"status": "true", "message":"signup success"};
+       res.end( JSON.stringify(dict));
    });
 })
 
