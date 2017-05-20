@@ -52,6 +52,7 @@ app.post('/addUser', function (req, res) {
    // First read existing users.
    fs.readFile("./" + "users.json", 'utf8', function (err, data) {
        data = JSON.parse( data );
+       console.log( reqJson );
     
        //var keys = Object.keys(reqJson);
        for (var i = 0; i < reqJson.length; i++) {
@@ -65,7 +66,7 @@ app.post('/addUser', function (req, res) {
           if(err) throw err;
        });
        
-       console.log( data );
+       
        var dict = {"status": "true", "message":"signup success"};
        res.end( JSON.stringify(dict));
    });
