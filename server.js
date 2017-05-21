@@ -66,9 +66,10 @@ app.post('/addUser', function (req, res) {
           if(err) throw err;
        });
        
-       
+       var result = [];
        var dict = {"status": "true", "message":"signup success"};
-       res.end( JSON.stringify(dict));
+       result.push(dict)
+       res.end( JSON.stringify(result));
    });
 })
 
