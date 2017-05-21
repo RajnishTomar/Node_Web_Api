@@ -21,6 +21,35 @@ app.get('/listUsers', function (req, res) {
    });
 })
 
+
+app.get('/:emailId', function (req, res) {
+   // First read existing users.
+   var emailId =  req.params.emailId
+
+   console.log(emailId);
+   
+   fs.readFile("./" + "users.json", 'utf8', function (err, data) {
+   
+       users = JSON.parse( data );
+       var keys = Object.keys(users);
+       var isExist = false;
+       for (var i = 0; i < keys.length; i++) {
+         user = users[keys[i]];
+         if(user["email_id"] == emailId){
+            isExist = true;
+            break;
+         }
+       }
+       if (isExist){
+          user["status"] = "true";
+          res.end( JSON.stringify(user));
+       }else{
+          var dict = {"status": "false", "message":"Email Id doesn't found."};
+          res.end(JSON.stringify(dict));
+       } 
+   });
+})
+
 app.get('/:emailId/:password', function (req, res) {
    // First read existing users.
    var emailId =  req.params.emailId
