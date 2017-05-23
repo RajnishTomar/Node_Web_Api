@@ -11,6 +11,8 @@ password = '5669543';
 
 // parse application/json
     app.use(bodyParser.json()); 
+//**********************************User Action methods********************************//
+
 
 app.get('/listUsers', function (req, res) {
 
@@ -21,8 +23,7 @@ app.get('/listUsers', function (req, res) {
    });
 })
 
-
-app.get('/:emailId', function (req, res) {
+app.get('/login/:emailId', function (req, res) {
    // First read existing users.
    var emailId =  req.params.emailId
 
@@ -50,12 +51,12 @@ app.get('/:emailId', function (req, res) {
    });
 })
 
-app.get('/:emailId/:password', function (req, res) {
+app.get('/login/:emailId/:password', function (req, res) {
    // First read existing users.
    var emailId =  req.params.emailId
    var password =  req.params.password;
    console.log(emailId);
-   console.log(req.params.password);
+   console.log(password);
    
    fs.readFile("./" + "users.json", 'utf8', function (err, data) {
        users = JSON.parse( data );
@@ -102,6 +103,22 @@ app.post('/addUser', function (req, res) {
    });
 })
 
+//*********************************User Action methods end******************************//
+
+//*********************************Home View Methods***********************************//
+
+app.get('/homeProducts', function (req, res) {
+
+//res.end("Hello");
+   fs.readFile("./" + "home.json", 'utf8', function (err, data) {
+       console.log( data );
+       res.end( data );
+       
+   });
+})
+
+
+//*********************************Helper Methods***************************************//
 function encrypt(text){
   var cipher = crypto.createCipher(algorithm,password)
   var crypted = cipher.update(text,'utf8','hex')
