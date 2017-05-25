@@ -1,0 +1,289 @@
+[
+  {
+    "name": "Kashiphal,Petha(Winter Melon)",
+    "price_per_kg": "20/kg",
+    "price_per_unit" : "25",
+    "description" : "per piece arround 1.5 kg",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/apple-new.png"
+  },
+  {
+    "name": "Karela(Bitter Melon)",
+    "price_per_kg": "40/kg",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/banana.jpg"
+  },
+  {
+    "name": "Ghiya,Kaddoo,Laukee(Pumpkin)",
+    "price_per_kg": "20/kg",
+    "price_per_unit" : "10",
+    "description" : "per piece arround 500 gm",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/watermelon.jpg"
+  },
+  {
+    "name": "Pattagobhi(Cabbage)",
+    "price_per_kg": "20/kg",
+    "price_per_unit" : "10",
+    "description" : "per piece arround 500 gm",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/green-grapes.jpg"
+  },
+  {
+    "name": "Shimala Mirch(Bell Pepper)",
+    "price_per_kg": "70/kg",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/black-grapes.jpeg"
+  },
+  {
+    "name": "Gajar(Carrot)",
+    "price_per_kg": "40/kg",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/mango-safeda.jpg"
+  },
+  {
+    "name": "Phool Gobhi(Cauliflower)",
+    "price_per_kg": "30/kg",
+    "price_per_unit" : "10",
+    "description" : "per piece arround 250 gm",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/pomegranate-new.png"
+  },
+  {
+    "name": "Gwaar Fali(French Beans)",
+    "price_per_kg": "40/kg",
+    "price_per_unit" : "40",
+    "description" : "per piece arround 1 kg",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Papaya.jpg"
+  },
+  {
+    "name": "Kheera(Cucumber)",
+    "price_per_kg": "30/kg",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/muskmelon.jpg"
+  },
+  {
+    "name": "Baigan(Brinjal)",
+    "price_per_kg": "30/kg",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/muskmelon-striped.jpg"
+  },
+  {
+    "name": "Chanaa(Bengal Gram)",
+    "price_per_kg": "90/kg",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/mosambi.jpg"
+  },
+  {
+    "name": "Sem Phalee(Horse Beans)",
+    "price_per_kg": "30/kg",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/pineapple.jpg"
+  },
+  {
+    "name": "Haree Mirch(Green chilli)",
+    "price_per_kg": "100/kg",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/cherries.jpg"
+  },
+  {
+    "name": "Katahal(Jackfruit)",
+    "price_per_kg": "50/kg",
+    "price_per_unit" : "60",
+    "description" : "per piece arround 1.2 kg",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/orange-new.png"
+  },
+  {
+    "name": "Bhindee(Lady Finger)",
+    "price_per_kg": "60/kg",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/litchi.jpg"
+  },
+  {
+    "name": "Kukuramutta(Mushroom)",
+    "price_per_kg": "120/kg",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/jamun.jpg"
+  },
+  {
+    "name": "Karonda(Natal Plum)",
+    "price_per_kg": "100/kg",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/mosambi.jpg"
+  },
+  {
+    "name": "Matar(Peas)",
+    "price_per_kg": "80/kg",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/pineapple.jpg"
+  },
+  {
+    "name": "Paraval(Pointed Gourd)",
+    "price_per_kg": "40/kg",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/cherries.jpg"
+  },
+  {
+    "name": "Aaloo(Potato)",
+    "price_per_kg": "15/kg",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/orange-new.png"
+  },
+  {
+    "name": "Turai(Ridged Gourd)",
+    "price_per_kg": "60/kg",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/litchi.jpg"
+  },
+  {
+    "name": "Palak(Spinach)",
+    "price_per_kg": "10/kg",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/jamun.jpg"
+  },
+  {
+    "name": "Tamaatar(Tomato)",
+    "price_per_kg": "25/kg",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/mosambi.jpg"
+  },
+  {
+    "name": "Bathua(White Goose Foot)",
+    "price_per_kg": "10/kg",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/pineapple.jpg"
+  },
+  {
+    "name": "Paraval(Pointed Gourd)",
+    "price_per_kg": "40/kg",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/cherries.jpg"
+  },
+  {
+    "name": "Aaloo(Potato)",
+    "price_per_kg": "15/kg",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/orange-new.png"
+  },
+  {
+    "name": "Turai(Ridged Gourd)",
+    "price_per_kg": "60/kg",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/litchi.jpg"
+  },
+  {
+    "name": "Shalagam(Turnip)",
+    "price_per_kg": "10/kg",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/jamun.jpg"
+  },
+  {
+    "name": "Shakar Kand(Sweet Potato)",
+    "price_per_kg": "40/kg",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/mosambi.jpg"
+  },
+  {
+    "name": "Haldee(Turmeric)",
+    "price_per_kg": "120/kg",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/pineapple.jpg"
+  },
+  {
+    "name": "Hara Pyaaz(Green Onion)",
+    "price_per_kg": "40/kg",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/cherries.jpg"
+  },
+  {
+    "name": "Pudeena(Mint)",
+    "price_per_kg": "40/kg",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/orange-new.png"
+  },
+  {
+    "name": "Pyaz(Onion)",
+    "price_per_kg": "30/kg",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/litchi.jpg"
+  },
+  {
+    "name": "Sarson Patta(Mustard Greens)",
+    "price_per_kg": "10/kg",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/jamun.jpg"
+  },
+  {
+    "name": "Adarak(Ginger)",
+    "price_per_kg": "70/kg",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/mosambi.jpg"
+  },
+  {
+    "name": "Lahasun(Garlic)",
+    "price_per_kg": "100/kg",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/pineapple.jpg"
+  },
+  {
+    "name": "Hari Methi(Fenugreek Leaf)",
+    "price_per_kg": "20/kg",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/cherries.jpg"
+  },
+  {
+    "name": "Kadhi Patta (Curry Leaf)",
+    "price_per_kg": "40/kg",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/orange-new.png"
+  },
+  {
+    "name": "Makka(Maize)",
+    "price_per_kg": "40/kg",
+    "price_per_unit" : "10",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/litchi.jpg"
+  },
+  {
+    "name": "Hara Dhaniya(Coriander Leaf)",
+    "price_per_kg": "60/kg",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/jamun.jpg"
+  },
+  {
+    "name": "Chakundar(Beetroot)",
+    "price_per_kg": "30/kg",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/jamun.jpg"
+  }
+]
