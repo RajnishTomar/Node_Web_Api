@@ -4,7 +4,7 @@
     "price_per_kg": "120/kg",
     "price_per_unit" : "20",
     "description" : "per piece arround 200 gm",
-    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/apple.jpg"
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/apple-new.png"
   },
   {
     "name": "Banana",
@@ -46,7 +46,7 @@
     "price_per_kg": "60/kg",
     "price_per_unit" : "10",
     "description" : "per piece arround 200 gm",
-    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/pomegranate.jpg"
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/pomegranate-new.png"
   },
   {
     "name": "Papaya",
@@ -95,7 +95,7 @@
     "price_per_kg": "120/kg",
     "price_per_unit" : "18",
     "description" : "per piece arround 100 gm",
-    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/orange.jpg"
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/orange-new.png"
   },
   {
     "name": "Litchi",
