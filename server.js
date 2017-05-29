@@ -137,6 +137,16 @@ app.get('/vegetables', function (req, res) {
    });
 })
 
+app.get('/plants', function (req, res) {
+
+//res.end("Hello");
+   fs.readFile("./" + "plants-category.json", 'utf8', function (err, data) {
+       console.log( data );
+       res.end( data );
+       
+   });
+})
+
 //*********************************Home View Method Ends***********************************//
 
 //*********************************Helper Methods***************************************//

@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Fruits crop seedling",
+    "price_per_kg": "",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Plants/fruit_seedling.jpg"
+  },
+  {
+    "name": "Vegetables crop seedling",
+    "price_per_kg": "",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Plants/vegetable_seedling.jpg"
+  },
+  {
+    "name": "Flowers crop seedling",
+    "price_per_kg": "",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Plants/flower_seedling.png"
+  },
+  {
+    "name": "Ornament plants",
+    "price_per_kg": "",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Plants/ornament_plants.jpg"
+  },
+  {
+    "name": "Landscape plants",
+    "price_per_kg": "",
+    "price_per_unit" : "",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Plants/landscape_plants.jpg"
+  }
+]

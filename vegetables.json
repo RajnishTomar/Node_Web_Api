@@ -112,6 +112,13 @@
     "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/vegetables/Mushroom.jpg"
   },
   {
+    "name": "Nibu(Lemon)",
+    "price_per_kg": "90/kg",
+    "price_per_unit" : "3",
+    "description" : "",
+    "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/vegetables/lemon.jpg"
+  },
+  {
     "name": "Karonda(Natal Plum)",
     "price_per_kg": "100/kg",
     "price_per_unit" : "",
