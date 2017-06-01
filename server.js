@@ -62,6 +62,7 @@ app.get('/login/:emailId/:password', function (req, res) {
        users = JSON.parse( data );
        var key = encrypt(emailId+password);
        var user = users[key];
+       user["token"] = key;
        
        console.log( user );
        if (user){
@@ -148,6 +149,47 @@ app.get('/plants', function (req, res) {
 })
 
 //*********************************Home View Method Ends***********************************//
+
+
+//***********************************Cart Methods*****************************************//
+
+app.post('/addToCart', function (req, res) {
+
+   reqJson =  req.body;
+   console.log( reqJson );
+   // First read existing users.
+   fs.readFile("./" + "cart.json", 'utf8', function (err, data) {
+       data = JSON.parse( data );
+       
+       var keys = Object.keys(reqJson);
+       for (var i = 0; i < keys.length && keys.length == 1 ; i++) {
+            var userKey =  keys[i];
+            console.log(userKey);
+            
+            var userCartArray = data[userKey];
+            if(userCartArray == null){
+               userCartArray = [];
+            }
+            var newItem =  reqJson[userKey];
+            userCartArray.push(newItem);
+            
+            //then replace previous cart to newly build card
+            data[userKey] =  userCartArray;
+       }
+       
+       json = JSON.stringify(data);
+       fs.writeFile("./" + "cart.json", json, 'utf8',function(err){
+          if(err) throw err;
+       });
+       
+       var result = [];
+       var dict = {"status": "true", "message":"Added to cart successfuly"};
+       result.push(dict)
+       res.end( JSON.stringify(result));
+   });
+})
+
+//**********************************Cart Methods End**************************************//
 
 //*********************************Helper Methods***************************************//
 function encrypt(text){
