@@ -188,6 +188,34 @@ app.post('/addToCart', function (req, res) {
    });
 })
 
+app.get('/getUserCart/:token', function (req, res) {
+   // First read existing users.
+   var token =  req.params.token
+   console.log(token);
+   
+   fs.readFile("./" + "cart.json", 'utf8', function (err, data) {
+       var cart = JSON.parse( data );
+       var userCartItemsArray = cart[token];
+       if(userCartItemsArray == null || userCartItemsArray.length == 0){
+         var dict = {"status": "false", "message":"No item found"};
+          res.end(JSON.stringify(dict));
+       }
+    
+       var responseCart = {};
+       console.log( userCartItemsArray );
+       
+       
+       if (userCartItemsArray){
+          responseCart["status"] = "true";
+          responseCart["item"] = userCartItemsArray
+          res.end( JSON.stringify(responseCart));
+       }else{
+          var dict = {"status": "false", "message":"No item found"};
+          res.end(JSON.stringify(dict));
+       } 
+   });
+})
+
 //**********************************Cart Methods End**************************************//
 
 //*********************************Helper Methods***************************************//
