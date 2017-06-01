@@ -177,13 +177,14 @@ app.post('/addToCart', function (req, res) {
        
        json = JSON.stringify(data);
        fs.writeFile("./" + "cart.json", json, 'utf8',function(err){
-          if(err) throw err;
+          if(err){ 
+          throw err;
+          return;
+          }
        });
        
-       var result = [];
        var dict = {"status": "true", "message":"Added to cart successfully"};
-       result.push(dict)
-       res.end( JSON.stringify(result));
+       res.end( JSON.stringify(dict));
    });
 })
 
