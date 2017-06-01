@@ -161,21 +161,19 @@ app.post('/addToCart', function (req, res) {
    fs.readFile("./" + "cart.json", 'utf8', function (err, data) {
        data = JSON.parse( data );
        
-       var keys = Object.keys(reqJson);
-       for (var i = 0; i < keys.length && keys.length == 1 ; i++) {
-            var userKey =  keys[i];
-            console.log(userKey);
+       var key = reqJson["token"];
+       console.log(key);
+       
+        var userCartArray = data[key];
+        if(userCartArray == null){
+            userCartArray = [];
+        }
+        var newItem =  reqJson[key];
+        userCartArray.push(newItem);
             
-            var userCartArray = data[userKey];
-            if(userCartArray == null){
-               userCartArray = [];
-            }
-            var newItem =  reqJson[userKey];
-            userCartArray.push(newItem);
-            
-            //then replace previous cart to newly build card
-            data[userKey] =  userCartArray;
-       }
+        //then replace previous cart to newly build card
+         data[key] =  userCartArray;
+       
        
        json = JSON.stringify(data);
        fs.writeFile("./" + "cart.json", json, 'utf8',function(err){
@@ -183,7 +181,7 @@ app.post('/addToCart', function (req, res) {
        });
        
        var result = [];
-       var dict = {"status": "true", "message":"Added to cart successfuly"};
+       var dict = {"status": "true", "message":"Added to cart successfully"};
        result.push(dict)
        res.end( JSON.stringify(result));
    });
