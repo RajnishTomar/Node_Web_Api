@@ -201,7 +201,7 @@ app.get('/getUserCart/:token', function (req, res) {
           res.end(JSON.stringify(dict));
        }
     
-       var responseCart = {};
+       var responseCart = [];
        console.log( userCartItemsArray );
        
        

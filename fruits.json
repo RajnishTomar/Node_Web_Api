@@ -4,6 +4,7 @@
     "price_per_kg": "120",
     "price_per_unit" : "20",
     "description" : "per piece arround 200 gm",
+    "cart_status" : "false",
     "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/apple-new.png"
   },
   {
@@ -11,6 +12,7 @@
     "price_per_kg": "50",
     "price_per_unit" : "5",
     "description" : "per piece arround 100 gm",
+    "cart_status" : "false",
     "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/banana.jpg"
   },
   {
@@ -18,6 +20,7 @@
     "price_per_kg": "20",
     "price_per_unit" : "35",
     "description" : "per piece arround 2 kg",
+    "cart_status" : "false",
     "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/watermelon.jpg"
   },
   {
@@ -25,6 +28,7 @@
     "price_per_kg": "140",
     "price_per_unit" : "",
     "description" : "",
+    "cart_status" : "false",
     "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/green-grapes.jpg"
   },
   {
@@ -32,6 +36,7 @@
     "price_per_kg": "160",
     "price_per_unit" : "",
     "description" : "",
+    "cart_status" : "false",
     "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/black-grapes.jpeg"
   },
   {
@@ -39,6 +44,7 @@
     "price_per_kg": "40",
     "price_per_unit" : "10",
     "description" : "per piece arround 200 gm",
+    "cart_status" : "false",
     "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/mango-safeda.jpg"
   },
   {
@@ -46,6 +52,7 @@
     "price_per_kg": "60",
     "price_per_unit" : "10",
     "description" : "per piece arround 200 gm",
+    "cart_status" : "false",
     "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/pomegranate-new.png"
   },
   {
@@ -53,6 +60,7 @@
     "price_per_kg": "40",
     "price_per_unit" : "40",
     "description" : "per piece arround 1 kg",
+    "cart_status" : "false",
     "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Papaya.jpg"
   },
   {
@@ -60,6 +68,7 @@
     "price_per_kg": "30",
     "price_per_unit" : "40",
     "description" : "per piece arround 1.5 gm",
+    "cart_status" : "false",
     "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/muskmelon.jpg"
   },
   {
@@ -67,6 +76,7 @@
     "price_per_kg": "40",
     "price_per_unit" : "40",
     "description" : "per piece arround 1 kg",
+    "cart_status" : "false",
     "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/muskmelon-striped.jpg"
   },
   {
@@ -74,6 +84,7 @@
     "price_per_kg": "70",
     "price_per_unit" : "10",
     "description" : "per piece arround 100 gm",
+    "cart_status" : "false",
     "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/mosambi.jpg"
   },
   {
@@ -81,6 +92,7 @@
     "price_per_kg": "70",
     "price_per_unit" : "70",
     "description" : "per piece arround 1 kg",
+    "cart_status" : "false",
     "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/pineapple.jpg"
   },
   {
@@ -88,6 +100,7 @@
     "price_per_kg": "300",
     "price_per_unit" : "",
     "description" : "",
+    "cart_status" : "false",
     "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/cherries.jpg"
   },
   {
@@ -95,6 +108,7 @@
     "price_per_kg": "120",
     "price_per_unit" : "18",
     "description" : "per piece arround 100 gm",
+    "cart_status" : "false",
     "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/orange-new.png"
   },
   {
@@ -102,6 +116,7 @@
     "price_per_kg": "200",
     "price_per_unit" : "",
     "description" : "",
+    "cart_status" : "false",
     "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/litchi.jpg"
   },
   {
@@ -109,6 +124,7 @@
     "price_per_kg": "250",
     "price_per_unit" : "",
     "description" : "",
+    "cart_status" : "false",
     "url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/jamun.jpg"
   }
 ]
