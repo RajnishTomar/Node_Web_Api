@@ -169,11 +169,20 @@ app.post('/addToCart', function (req, res) {
             userCartArray = [];
         }
         var newItem =  reqJson[key];
-        userCartArray.push(newItem);
-            
-        //then replace previous cart to newly build card
-         data[key] =  userCartArray;
+        var category = newItem["item_type"]; //fruit, vegetable, plant,etc.
+        
+       var position =  checkIfExist(userCartArray,newItem["name"]);
+       if(position != -1){
+          var item = userCartArray[position];
+          item["quantity"] = newItem["quantity"];
+          item["unit_count"] = newItem["unit_count"];
+          userCartArray[position] = item;
+       }else{
+          userCartArray.push(newItem);
+       }
        
+       //then replace previous cart to newly build card
+         data[key] =  userCartArray;
        
        json = JSON.stringify(data);
        fs.writeFile("./" + "cart.json", json, 'utf8',function(err){
@@ -182,6 +191,8 @@ app.post('/addToCart', function (req, res) {
           return;
           }
        });
+       
+       
        
        var dict = {"status": "true", "message":"Added to cart successfully"};
        res.end( JSON.stringify(dict));
@@ -219,6 +230,25 @@ app.get('/getUserCart/:token', function (req, res) {
 //**********************************Cart Methods End**************************************//
 
 //*********************************Helper Methods***************************************//
+
+function checkIfExist(userCartArray, itemName){
+
+   console.log("and item name is : ");
+   console.log(itemName);
+   
+   for (var i = 0; i < userCartArray.length; i++) {
+           var dataDict =  userCartArray[i];
+           console.log(dataDict["name"])
+            if(itemName == dataDict["name"]){
+                console.log("Done");
+                return i;
+            }
+    }
+   
+
+   return -1;
+
+}
 function encrypt(text){
   var cipher = crypto.createCipher(algorithm,password)
   var crypted = cipher.update(text,'utf8','hex')
@@ -231,6 +261,67 @@ function decrypt(text){
   var dec = decipher.update(text,'hex','utf8')
   dec += decipher.final('utf8');
   return dec;
+}
+
+function modifyFile(categoryName, itemName){
+
+   console.log("selected category is ");
+   console.log(categoryName);
+   console.log("and item name is : ");
+   console.log(itemName);
+   
+   if(categoryName == "Fruits"){
+
+     fs.readFile("./" + "fruits.json", 'utf8', function (err, data) {
+          var json = JSON.parse( data ); 
+         return writeJsonToFile(json,itemName,"fruits.json");
+          
+     });
+
+   }else if(categoryName == "Vegetables"){
+
+      fs.readFile("./" + "vegetables.json", 'utf8', function (err, data) {
+          var json = JSON.parse( data );
+         return  writeJsonToFile(json,itemName,"vegetables.json");
+       
+       });
+
+   }else if(categoryName=="Plants"){
+
+        fs.readFile("./" + "plants-category.json", 'utf8', function (err, data) {
+        var json = JSON.parse( data );
+             console.log( data );
+        
+        });
+
+   }
+
+}
+
+function writeJsonToFile(jsonArray,itemName,fileName){
+
+   for (var i = 0; i < jsonArray.length; i++) {
+           var dataDict =  jsonArray[i];
+           console.log(dataDict["name"])
+            if(itemName == dataDict["name"]){
+              dataDict["cart_status"] = "true";
+              console.log(dataDict["cart_status"]);
+              json[i] = dataDict;
+              
+             fs.writeFile("./" + fileName, json, 'utf8',function(err){
+               if(err){ 
+                 throw err;
+                 return;
+               }
+             });
+             console.log("Done");
+           return true;;
+       }
+            
+  }
+  
+  return false;
+
 }
 
 var server = app.listen(3000, function () {
