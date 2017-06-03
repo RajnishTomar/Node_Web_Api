@@ -173,6 +173,7 @@ app.post('/addToCart', function (req, res) {
         
        var position =  checkIfExist(userCartArray,newItem["name"]);
        if(position != -1){
+          console.log("position" + position);
           var item = userCartArray[position];
           item["quantity"] = newItem["quantity"];
           item["unit_count"] = newItem["unit_count"];
