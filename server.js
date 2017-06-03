@@ -169,7 +169,6 @@ app.post('/addToCart', function (req, res) {
             userCartArray = [];
         }
         var newItem =  reqJson[key];
-        var category = newItem["item_type"]; //fruit, vegetable, plant,etc.
         
        var position =  checkIfExist(userCartArray,newItem["name"]);
        if(position != -1){
@@ -213,11 +212,11 @@ app.get('/getUserCart/:token', function (req, res) {
           res.end(JSON.stringify(dict));
        }
     
-       var responseCart = [];
+       var responseCart = {};
        console.log( userCartItemsArray );
        
        
-       if (userCartItemsArray){
+       if (userCartItemsArray != null){
           responseCart["status"] = "true";
           responseCart["item"] = userCartItemsArray
           res.end( JSON.stringify(responseCart));
