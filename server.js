@@ -176,6 +176,7 @@ app.post('/addToCart', function (req, res) {
           var item = userCartArray[position];
           item["quantity"] = newItem["quantity"];
           item["unit_count"] = newItem["unit_count"];
+          item["is_selected_for_checkout"] = "true"
           userCartArray[position] = item;
        }else{
           newItem["is_selected_for_checkout"] = "true"
@@ -218,7 +219,7 @@ app.post('/editCartItem', function (req, res) {
        var updateType =  reqJson["type"];
        var userAction = ""
        if(updateType == "edit"){
-         userAction = reqJson["add_for_checkout_user_action"]; //either true or false
+         userAction = reqJson["item_checkbox_status"]; //either true or false
        }
        console.log(key);
        console.log(updateType);
