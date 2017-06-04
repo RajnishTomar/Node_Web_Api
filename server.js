@@ -178,6 +178,7 @@ app.post('/addToCart', function (req, res) {
           item["unit_count"] = newItem["unit_count"];
           userCartArray[position] = item;
        }else{
+          newItem["is_selected_for_checkout"] = "true"
           userCartArray.push(newItem);
        }
        
@@ -197,6 +198,61 @@ app.post('/addToCart', function (req, res) {
        var dict = {"status": "true", "message":"Added to cart successfully"};
        res.end( JSON.stringify(dict));
    });
+})
+
+app.post('/editCartItem', function (req, res) {
+
+    reqJson =  req.body;
+   console.log( reqJson );
+   // First read existing users.
+   fs.readFile("./" + "cart.json", 'utf8', function (err, data) {
+       data = JSON.parse( data );
+       
+       var key = reqJson["token"];
+       
+       var userCartArray = data[key];
+        if(userCartArray == null){
+            userCartArray = [];
+        }
+        var itemName =  reqJson["name"];
+       var updateType =  reqJson["type"];
+       var userAction = ""
+       if(updateType == "edit"){
+         userAction = reqJson["add_for_checkout_user_action"]; //either true or false
+       }
+       console.log(key);
+       console.log(updateType);
+       console.log(userAction);
+       
+       var position =  checkIfExist(userCartArray,itemName);
+       if(position != -1){ //it will never be -1 as item exist in cart, we are just editing that
+          console.log("position" + position);
+          if(updateType == "delete"){//delete item
+              userCartArray.splice(position, 1);
+          }else{
+             var item = userCartArray[position];
+             item["is_selected_for_checkout"] = userAction;
+             userCartArray[position] = item;
+          }
+       }
+       
+       //then replace previous cart to newly build card
+         data[key] =  userCartArray;
+       
+       json = JSON.stringify(data);
+       fs.writeFile("./" + "cart.json", json, 'utf8',function(err){
+          if(err){ 
+          throw err;
+          return;
+          }
+       });
+       
+       
+       
+       var dict = {"status": "true", "message":"Cart Edited successfully"};
+       res.end( JSON.stringify(dict));
+   });
+   
 })
 
 app.get('/getUserCart/:token', function (req, res) {
