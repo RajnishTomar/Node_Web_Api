@@ -1,6 +1,7 @@
 var http      = require('http');
 var express = require('express');
 var bodyParser = require('body-parser');
+const nodemailer = require('nodemailer');
 var app = express();
 var fs = require("fs");
 var lodash = require('lodash');
@@ -42,8 +43,11 @@ app.get('/login/:emailId', function (req, res) {
          }
        }
        if (isExist){
-          user["status"] = "true";
-          res.end( JSON.stringify(user));
+       var responsedata = {};
+          sendEmailTo(emailId,user["password"], res);
+          // responsedata["status"] = "true";
+//           responsedata["message"] = "we have send you a mail with your login password, please check your mail."
+//           res.end( JSON.stringify(responsedata));
        }else{
           var dict = {"status": "false", "message":"Email Id doesn't found."};
           res.end(JSON.stringify(dict));
@@ -379,6 +383,45 @@ function writeJsonToFile(jsonArray,itemName,fileName){
   
   return false;
 
+}
+
+function sendEmailTo(email, password, res){
+   // create reusable transporter object using the default SMTP transport
+   let transporter = nodemailer.createTransport({
+        host: 'smtp.gmail.com',
+        port: 465,
+        secure: true, // secure:true for port 465, secure:false for port 587
+        auth: {
+             user: 'sabzi.bazaar2017@gmail.com',
+             pass: 'Raju5669543#'
+        }
+    });
+    
+    // setup email data with unicode symbols
+    let mailOptions = {
+        from: 'sabzi.bazaar2017@gmail.com', // sender address
+        to: email, // list of receivers
+        subject: 'Sabji bazaar login password', // Subject line
+        text: 'your password : ' + password, // plain text body
+        html: '' // html body
+    };
+    
+    // send mail with defined transport object
+   transporter.sendMail(mailOptions, (error, info) => {
+        var  responsedata = {};
+        
+        if (error) {
+             console.log(error);
+             responsedata["status"] = "false";
+             responsedata["message"] = "Right now we are unable to sent your password, please try after sometime."
+             res.end( JSON.stringify(responsedata));
+        }
+
+        responsedata["status"] = "true";
+        responsedata["message"] = "we have send you a mail with your login password, please check your mail."
+        res.end( JSON.stringify(responsedata));
+        console.log('Message %s sent: %s', info.messageId, info.response);
+   });
 }
 
 var server = app.listen(3000, function () {
