@@ -290,6 +290,40 @@ app.get('/getUserCart/:token', function (req, res) {
 
 //**********************************Cart Methods End**************************************//
 
+
+//**********************************Payu hash calulation*********************************//
+
+app.post('/payment/calulateHash', function (req, res) {
+
+    reqJson =  req.body;
+    console.log( reqJson );
+    
+    // var string = marchentKey +'|' +txnid+ '|' +amount+'|'+productinfo+'|'+firstname+'|'+email+'|||||||||||'+salt;
+//     var hash=sha512(string);
+//     
+//     console.log( "Generated hash : " + hash);
+
+    var dict = {"status": "true", "message":"Cart Edited successfully"};
+    res.end( JSON.stringify(dict));
+    
+});
+
+app.get('/payuSuccess', function (req, res) {
+   // First read existing users.
+   PayUmoney.success()
+   var dict = {"status": "true", "message":"No item found"};
+   res.end(JSON.stringify(dict));
+    
+});
+
+app.get('/payuFailure', function (req, res) {
+    PayUmoney.failure() 
+    var dict = {"status": "true", "message":"No item found"};
+    res.end(JSON.stringify(dict));
+});
+
+//*******************************Payu methods end****************************************//
+
 //*********************************Helper Methods***************************************//
 
 function checkIfExist(userCartArray, itemName){
