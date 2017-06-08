@@ -96,7 +96,7 @@ app.post('/addUser', function (req, res) {
             data[key] = reqJson[i];
        }
        
-       data["is_phone_verified"] = "false";
+       data["is_phone_verified"] = "true";
        data["is_email_verified"] = "false";
        
        json = JSON.stringify(data);
