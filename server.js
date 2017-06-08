@@ -2,7 +2,6 @@ var http      = require('http');
 var express = require('express');
 var bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
-var sha512 = require('sha512');
 var app = express();
 var fs = require("fs");
 var lodash = require('lodash');
