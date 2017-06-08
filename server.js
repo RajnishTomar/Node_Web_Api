@@ -96,6 +96,9 @@ app.post('/addUser', function (req, res) {
             data[key] = reqJson[i];
        }
        
+       data["is_phone_verified"] = "false";
+       data["is_email_verified"] = "false";
+       
        json = JSON.stringify(data);
        fs.writeFile("./" + "users.json", json, 'utf8',function(err){
           if(err) throw err;
