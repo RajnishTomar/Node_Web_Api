@@ -2,6 +2,7 @@ var http      = require('http');
 var express = require('express');
 var bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
+var sha512 = require('sha512');
 var app = express();
 var fs = require("fs");
 var lodash = require('lodash');
@@ -291,35 +292,18 @@ app.get('/getUserCart/:token', function (req, res) {
 //**********************************Cart Methods End**************************************//
 
 
-//**********************************Payu hash calulation*********************************//
+//**********************************Payu sUrl and fUrl post methods*********************************//
 
-app.post('/payment/calulateHash', function (req, res) {
-
-    reqJson =  req.body;
-    console.log( reqJson );
-    
-    // var string = marchentKey +'|' +txnid+ '|' +amount+'|'+productinfo+'|'+firstname+'|'+email+'|||||||||||'+salt;
-//     var hash=sha512(string);
-//     
-//     console.log( "Generated hash : " + hash);
-
-    var dict = {"status": "true", "message":"Cart Edited successfully"};
-    res.end( JSON.stringify(dict));
-    
-});
-
-app.get('/payuSuccess', function (req, res) {
+// Path to success :D, YAY!
+app.post('/success', function (req, res) {
    // First read existing users.
-   PayUmoney.success()
-   var dict = {"status": "true", "message":"No item found"};
-   res.end(JSON.stringify(dict));
+   res.send("Success!")
     
 });
 
-app.get('/payuFailure', function (req, res) {
-    PayUmoney.failure() 
-    var dict = {"status": "true", "message":"No item found"};
-    res.end(JSON.stringify(dict));
+// :P My payment failed!
+app.post('/failure', function (req, res) {
+    res.send("OOPS payment failed!")
 });
 
 //*******************************Payu methods end****************************************//
