@@ -24,13 +24,19 @@ app.get('/listUsers', function (req, res) {
    });
 })
 
-app.get('/login/:emailId', function (req, res) {
+app.get('/forgotPassword/:emailId/:isMerchant/', function (req, res) {
    // First read existing users.
    var emailId =  req.params.emailId
-
-   console.log(emailId);
+   var isMerchant = req.params.isMerchant;
    
-   fs.readFile("./" + "users.json", 'utf8', function (err, data) {
+   console.log(emailId);
+   console.log(isMerchant);
+   
+   var fileName = "users.json";
+   if(isMerchant == "true"){
+      fileName = "merchant.json";
+   }
+   fs.readFile("./" + fileName, 'utf8', function (err, data) {
    
        users = JSON.parse( data );
        var keys = Object.keys(users);
@@ -55,14 +61,21 @@ app.get('/login/:emailId', function (req, res) {
    });
 })
 
-app.get('/login/:emailId/:password', function (req, res) {
+app.get('/login/:emailId/:password/:isMerchant/', function (req, res) {
    // First read existing users.
    var emailId =  req.params.emailId
    var password =  req.params.password;
+   var isMerchant = req.params.isMerchant;
    console.log(emailId);
    console.log(password);
+   console.log(isMerchant);
    
-   fs.readFile("./" + "users.json", 'utf8', function (err, data) {
+   var fileName = "users.json";
+   if(isMerchant == "true"){
+      fileName = "merchant.json";
+   }
+   
+   fs.readFile("./" + fileName, 'utf8', function (err, data) {
        users = JSON.parse( data );
        var key = encrypt(emailId+password);
        var user = users[key];
@@ -82,29 +95,68 @@ app.get('/login/:emailId/:password', function (req, res) {
 
 app.post('/addUser', function (req, res) {
 
+   var isMerchant = false;
+   var data = {};
    reqJson =  req.body;
-   
-   // First read existing users.
-   fs.readFile("./" + "users.json", 'utf8', function (err, data) {
-       data = JSON.parse( data );
-       console.log( reqJson );
-    
-       //var keys = Object.keys(reqJson);
-       for (var i = 0; i < reqJson.length; i++) {
+
+   for (var i = 0; i < reqJson.length; i++) { //this array will always has single element
            var dataDict =  reqJson[i];
-            var key = encrypt(dataDict["email_id"]+dataDict["password"]);
-            data[key] = reqJson[i];
-       }
-       json = JSON.stringify(data);
-       fs.writeFile("./" + "users.json", json, 'utf8',function(err){
-          if(err) throw err;
-       });
+           if(dataDict["is_merchant"] == "true"){
+               isMerchant = true
+           }
+   }
+
+   if(isMerchant){
+     
+     // First read existing merchants.
+       fs.readFile("./" + "merchant.json", 'utf8', function (err, data) {
+              data = JSON.parse( data );
+              console.log( reqJson );
+    
+              //var keys = Object.keys(reqJson);
+              for (var i = 0; i < reqJson.length; i++) {
+                  var dataDict =  reqJson[i];
+                  var key = encrypt(dataDict["email_id"]+dataDict["password"]);
+                  data[key] = reqJson[i];
+                  var merchantDict = data[key];
+                  merchantDict["customers"] = {};//on merchant sign up  there blank dictionary for customers
+                  data[key] = merchantDict;
+              }
        
-       var result = [];
+              json = JSON.stringify(data);
+              fs.writeFile("./" + "merchant.json", json, 'utf8',function(err){
+                     if(err) throw err;
+              });
+
+       });
+
+   }else{
+
+       // First read existing users.
+       fs.readFile("./" + "users.json", 'utf8', function (err, data) {
+              data = JSON.parse( data );
+              console.log( reqJson );
+    
+              //var keys = Object.keys(reqJson);
+              for (var i = 0; i < reqJson.length; i++) {
+                  var dataDict =  reqJson[i];
+                  var key = encrypt(dataDict["email_id"]+dataDict["password"]);
+                  data[key] = reqJson[i];
+              }
+       
+              json = JSON.stringify(data);
+              fs.writeFile("./" + "users.json", json, 'utf8',function(err){
+                     if(err) throw err;
+              });
+
+       });
+   }
+   
+   var result = [];
        var dict = {"status": "true", "message":"signup success"};
        result.push(dict)
        res.end( JSON.stringify(result));
-   });
+   
 })
 
 //*********************************User Action methods end******************************//
