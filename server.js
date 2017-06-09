@@ -42,7 +42,11 @@ app.get('/forgotPassword/:emailId/:isMerchant/', function (req, res) {
        var keys = Object.keys(users);
        var isExist = false;
        for (var i = 0; i < keys.length; i++) {
-         user = users[keys[i]];
+       
+         if(keys[i] == "customers") {
+            continue;
+         }
+         var user = users[keys[i]];
          if(user["email_id"] == emailId){
             isExist = true;
             break;
@@ -79,11 +83,10 @@ app.get('/login/:emailId/:password/:isMerchant/', function (req, res) {
        users = JSON.parse( data );
        var key = encrypt(emailId+password);
        var user = users[key];
-       user["token"] = key;
-       
-       console.log( user );
        if (user){
-          user["status"] = "true";
+           console.log( user );
+           user["token"] = key;
+           user["status"] = "true";
           res.end( JSON.stringify(user));
        }else{
           var dict = {"status": "false", "message":"Invalid login credentials"};
