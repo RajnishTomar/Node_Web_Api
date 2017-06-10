@@ -166,12 +166,63 @@ app.post('/addUser', function (req, res) {
 
 //*********************************Home View Methods***********************************//
 
-app.get('/homeProducts', function (req, res) {
+app.post('/addHomeProducts', function (req, res) {
 
+   reqJson =  req.body;
+   console.log( reqJson );
+   const key = reqJson["token"];
+   console.log(key);
+   var productsArray = reqJson[key];
+   if(productsArray == null){
+       var dict = {"status": "false", "message":"Merchant Invalid"};
+       res.end( JSON.stringify(dict));
+   }
+   
+   var merchantProductsArray = [];
+   for (var i = 0; i < productsArray.length; i++) {
+           var productName =  productsArray[i];
+           console.log(productName)
+           
+           var productDict = {};
+                productDict["name"] = productName;
+                productDict["url"] = "https://s3.ap-south-1.amazonaws.com/sabjibazzar/" + productName + ".jpg";
+                
+            merchantProductsArray.push(productDict);
+    }
+    
+    fs.readFile("./" + "home.json", 'utf8', function (err, data) {
+        data = JSON.parse( data );
+        data[key] =  merchantProductsArray;
+                
+        json = JSON.stringify(data);
+        fs.writeFile("./" + "home.json", json, 'utf8',function(err){
+              if(err){ 
+                throw err;
+                 return;
+              }
+        }); 
+        
+        var dict = {"status": "true", "message":"Products Added successfully"};
+        res.end( JSON.stringify(dict));                 
+    });
+   
+   
+})
+
+app.get('/homeProducts/:merchantKey/', function (req, res) {
+
+   var merchantKey =  req.params.merchantKey
+   console.log(merchantKey);
 //res.end("Hello");
    fs.readFile("./" + "home.json", 'utf8', function (err, data) {
+       var data = JSON.parse( data );
        console.log( data );
-       res.end( data );
+       const productsArray = data[merchantKey];
+       if(productsArray == null){
+         res.end( JSON.stringify([]) )
+       }
+       const responseArrayStr  =  JSON.stringify(productsArray)
+       res.end( responseArrayStr );
        
    });
 })
