@@ -24,6 +24,14 @@ app.get('/listUsers', function (req, res) {
    });
 })
 
+app.get('/listMerchants', function (req, res) {
+
+   fs.readFile("./" + "merchant.json", 'utf8', function (err, data) {
+       console.log( data );
+       res.end( data );
+   });
+})
+
 app.get('/forgotPassword/:emailId/:isMerchant/', function (req, res) {
    // First read existing users.
    var emailId =  req.params.emailId
@@ -55,9 +63,6 @@ app.get('/forgotPassword/:emailId/:isMerchant/', function (req, res) {
        if (isExist){
        var responsedata = {};
           sendEmailTo(emailId,user["password"], res);
-          // responsedata["status"] = "true";
-//           responsedata["message"] = "we have send you a mail with your login password, please check your mail."
-//           res.end( JSON.stringify(responsedata));
        }else{
           var dict = {"status": "false", "message":"Email Id doesn't found."};
           res.end(JSON.stringify(dict));
