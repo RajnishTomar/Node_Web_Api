@@ -27,8 +27,15 @@ app.get('/listUsers', function (req, res) {
 app.get('/listMerchants', function (req, res) {
 
    fs.readFile("./" + "merchant.json", 'utf8', function (err, data) {
-       console.log( data );
-       res.end( data );
+       const merchants = JSON.parse( data );
+       
+       var responseDict = {};
+       responseDict["status"] = "true";
+       responseDict["message"] = "merchant fetched";
+       responseDict["merchants"] = merchants;
+       
+       console.log( responseDict );
+       res.end( JSON.stringify(responseDict) );
    });
 })
 

@@ -8,6 +8,7 @@
 		"location": "Chhatarpur new delhi",
 		"is_phone_verified": "true",
 		"is_email_verified": "false",
+		"url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/merchant/merchant.png",
 		"is_merchant": "true"
 	},
 	"88b766f10d8acb4b8714801ffe501b0ded527f74f3": {
@@ -19,6 +20,7 @@
 		"location": "Chhatarpur new Delhi ",
 		"is_phone_verified": "true",
 		"is_email_verified": "false",
+		"url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/merchant/merchant.png",
 		"is_merchant": "true",
 		"customers": {}
 	}
