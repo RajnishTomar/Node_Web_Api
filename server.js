@@ -239,33 +239,72 @@ app.get('/homeProducts/:merchantKey/', function (req, res) {
    });
 })
 
-app.get('/fruits', function (req, res) {
+app.get('/productCategoryItems/:fileName/', function (req, res) {//will be fruits, vegetables,plants,patanjali,grocery
 
-//res.end("Hello");
-   fs.readFile("./" + "fruits.json", 'utf8', function (err, data) {
+   var fileName =  req.params.fileName
+   fs.readFile("./" + fileName+".json", 'utf8', function (err, data) {
        console.log( data );
        res.end( data );
        
    });
 })
 
-app.get('/vegetables', function (req, res) {
+app.post('/addMerchantItems', function (req, res) {
+   //definition yet to implement;
+});
 
-//res.end("Hello");
-   fs.readFile("./" + "vegetables.json", 'utf8', function (err, data) {
+app.get('/productCategoryItems/:fileName/:merchantKey/', function (req, res) {
+
+   var merchantKey =  req.params.merchantKey
+   var fileName =  req.params.fileName
+   console.log( fileName );
+   fs.readFile("./" + fileName+".json", 'utf8', function (err, data) {
+       var data = JSON.parse( data );
        console.log( data );
-       res.end( data );
-       
+       const responseArray = data[merchantKey];
+       if(responseArray==null){
+          var dict = {"status": "true", "message":"No item yet added."};
+          const arr = [];
+          arr.push(dict);
+          res.end( JSON.stringify(arr))
+       }else{
+         res.end( JSON.stringify(responseArray))
+       }  
    });
 })
 
-app.get('/plants', function (req, res) {
+app.post('/addMerchantProductItems', function (req, res) {
 
-//res.end("Hello");
-   fs.readFile("./" + "plants-category.json", 'utf8', function (err, data) {
-       console.log( data );
-       res.end( data );
+   reqJson =  req.body;
+   console.log( reqJson );
+   const fileName= reqJson["file_name"];
+   console.log( fileName );
+   // First read existing users.
+   fs.readFile("./" + fileName+".json", 'utf8', function (err, data) {
+       data = JSON.parse( data );
        
+       var key = reqJson["token"];
+       console.log(key);
+       
+        var merchantFruitsArray = []//always replace the old one;
+        
+        var newFruitsArray =  reqJson[key]; 
+         for (var i = 0; i < newFruitsArray.length; i++) {
+           var dataDict =  newFruitsArray[i];
+           merchantFruitsArray.push(dataDict);
+        }
+        
+        data[key] = merchantFruitsArray;
+        json = JSON.stringify(data);
+       
+       fs.writeFile("./" + fileName+".json", json, 'utf8',function(err){
+          if(err){ 
+          throw err;
+          return;
+          }
+       });
+       var dict = {"status": "true", "message":"Added successfully"};
+       res.end( JSON.stringify(dict));
    });
 })
 
