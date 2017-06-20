@@ -5,9 +5,11 @@ const nodemailer = require('nodemailer');
 var app = express();
 var fs = require("fs");
 var lodash = require('lodash');
+var AWS = require('aws-sdk');
 // Nodejs encryption with CTR
 var crypto = require('crypto'),
     algorithm = 'aes-256-ctr',
+    
 password = '5669543';
 
 // parse application/json
@@ -249,9 +251,32 @@ app.get('/productCategoryItems/:fileName/', function (req, res) {//will be fruit
    });
 })
 
-app.post('/addMerchantItems', function (req, res) {
-   //definition yet to implement;
-});
+app.post('/addProductCategoryItems', function (req, res) { //to add more items under different product category-fruits,vegetables,plants,patanjali
+   
+   reqJson =  req.body;
+   console.log( reqJson );
+   const fileName= reqJson["file_name"];
+   console.log( fileName );
+   // First read existing users.
+   fs.readFile("./" + fileName+".json", 'utf8', function (err, data) {
+       var dataArray = JSON.parse( data );
+       var newItem =  reqJson["item"];
+       newItem["cart_status"] = "false";
+       dataArray.push(newItem);
+    
+        json = JSON.stringify(dataArray);
+       
+       fs.writeFile("./" + fileName+".json", json, 'utf8',function(err){
+          if(err){ 
+          throw err;
+          return;
+          }
+       });
+       var dict = {"status": "true", "message":"Added successfully"};
+       res.end( JSON.stringify(dict));
+   });
+      
+})
 
 app.get('/productCategoryItems/:fileName/:merchantKey/', function (req, res) {
 
