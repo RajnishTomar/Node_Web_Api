@@ -333,6 +333,54 @@ app.post('/addMerchantProductItems', function (req, res) {
    });
 })
 
+
+app.post('/deleteMerchantProductItems', function (req, res) {
+
+   reqJson =  req.body;
+   console.log( reqJson );
+   const fileName= reqJson["file_name"];
+   console.log( fileName );
+   // First read existing users.
+   fs.readFile("./" + fileName+".json", 'utf8', function (err, data) {
+       data = JSON.parse( data );
+       
+       var key = reqJson["token"]; //merchant key
+       console.log(key);
+       console.log(data);
+       
+       var merchantItemArray = data[key];
+    
+        var itemDict =  reqJson[key]; //item to delete
+        const itemName =  itemDict["name"];
+        var notFoundFlag = true;
+         for (var i = 0; i < merchantItemArray.length; i++) {
+           var dataDict =  merchantItemArray[i];
+           if(itemName == dataDict["name"]){
+              merchantItemArray.splice(i, 1);
+              notFoundFlag = false;
+              break;
+           }  
+        }
+        
+        if(notFoundFlag){
+            var dict = {"status": "true", "message":"There is some issue in deleting item, please try after some time."};
+            res.end( JSON.stringify(dict));
+        }
+        
+        data[key] = merchantItemArray;
+        json = JSON.stringify(data);
+       
+       fs.writeFile("./" + fileName+".json", json, 'utf8',function(err){
+          if(err){ 
+          throw err;
+          return;
+          }
+       });
+       var dict = {"status": "true", "message":"Deleted successfully"};
+       res.end( JSON.stringify(dict));
+   });
+})
+
 //*********************************Home View Method Ends***********************************//
 
 
@@ -622,7 +670,7 @@ function sendEmailTo(email, password, res){
    });
 }
 
-var server = app.listen(3000, function () {
+var server = app.listen('3000', function () {
 
   var host =  server.address().address
   var port =  server.address().port
