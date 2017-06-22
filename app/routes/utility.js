@@ -8,7 +8,10 @@ var crypto = require('crypto'),
     
 password = '5669543';
 
-module.exports = {
+module.exports =  {
+
+// parse application/json
+//app.use(bodyParser.json()); 
 
 //*********************************Helper Methods***************************************//
 function checkIfExist(userCartArray, itemName){
@@ -29,7 +32,7 @@ function checkIfExist(userCartArray, itemName){
    return -1;
 
 }
-var function encrypt(text){
+function encrypt(text){
   var cipher = crypto.createCipher(algorithm,password)
   var crypted = cipher.update(text,'utf8','hex')
   crypted += cipher.final('hex');
