@@ -3,6 +3,8 @@ var fs = require("fs");
 var lodash = require('lodash');
 var AWS = require('aws-sdk');
 
+var utility = require('./utility');
+
 module.exports = function(app, db) {
 
 app.use(bodyParser.json());
@@ -201,7 +203,7 @@ app.post('/editMerchantProductCategoryItems', function (req, res) { //to add mor
        var dataArray = dataDict[merchantKey];
        var newItem =  reqJson["item"];
     
-       var position =  checkIfExist(dataArray,newItem["name"]);
+       var position =  utility.checkIfExist(dataArray,newItem["name"]);
        if(position != -1){//might be merchant editing the already present item
           dataArray[position] = newItem;
        }else{
