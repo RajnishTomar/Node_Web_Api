@@ -190,7 +190,14 @@ app.post('/addProductCategoryItems', function (req, res) { //to add more items u
        var dataArray = JSON.parse( data );
        var newItem =  reqJson["item"];
        newItem["cart_status"] = "false";
-       dataArray.push(newItem);
+       
+       var position =  checkIfExist(dataArray,newItem["name"]);
+       if(position != -1){//might be merchant editing the already present item
+          dataArray[position] = newItem;
+       }else{
+         dataArray.push(newItem);
+       }
+       
     
         json = JSON.stringify(dataArray);
        
