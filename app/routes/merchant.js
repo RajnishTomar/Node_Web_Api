@@ -210,8 +210,9 @@ app.post('/editMerchantProductCategoryItems', function (req, res) { //to add mor
          dataArray.push(newItem);
        }
        
+       dataDict[merchantKey] = dataArray;
     
-        json = JSON.stringify(dataArray);
+        json = JSON.stringify(dataDict);
        
        fs.writeFile("./" + fileName+".json", json, 'utf8',function(err){
           if(err){ 

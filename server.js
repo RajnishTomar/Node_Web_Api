@@ -8,6 +8,7 @@ var lodash = require('lodash');
 var AWS = require('aws-sdk');
 
 require('./app/routes')(app, {});
+//var utility = require('./app/routes/utility');
 
 // Nodejs encryption with CTR
 var crypto = require('crypto'),
