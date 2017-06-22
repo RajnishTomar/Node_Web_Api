@@ -105,7 +105,40 @@ app.get('/productCategoryItems/:fileName/:merchantKey/', function (req, res) { /
    });
 })
 
+app.post('/addMerchantProductItems', function (req, res) {
 
+   reqJson =  req.body;
+   console.log( reqJson );
+   const fileName= reqJson["file_name"];
+   console.log( fileName );
+   // First read existing users.
+   fs.readFile("./" + fileName+".json", 'utf8', function (err, data) {
+       data = JSON.parse( data );
+       
+       var key = reqJson["token"];
+       console.log(key);
+       
+        var merchantFruitsArray = []//always replace the old one;
+        
+        var newFruitsArray =  reqJson[key]; 
+         for (var i = 0; i < newFruitsArray.length; i++) {
+           var dataDict =  newFruitsArray[i];
+           merchantFruitsArray.push(dataDict);
+        }
+        
+        data[key] = merchantFruitsArray;
+        json = JSON.stringify(data);
+       
+       fs.writeFile("./" + fileName+".json", json, 'utf8',function(err){
+          if(err){ 
+          throw err;
+          return;
+          }
+       });
+       var dict = {"status": "true", "message":"Added successfully"};
+       res.end( JSON.stringify(dict));
+   });
+})
 
 
 app.post('/deleteMerchantProductItems', function (req, res) { //delete item for merchant for selected category, tested working fine
