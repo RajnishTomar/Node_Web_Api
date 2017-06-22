@@ -1,8 +1,5 @@
-module.exports = {
+module.exports.checkIfExist = function (itemsArray,searchItemName){
 
-}
-
-function checkIfExist(itemsArray,searchItemName){
    console.log("and item name is : ");
    console.log(searchItemName);
    
@@ -15,4 +12,5 @@ function checkIfExist(itemsArray,searchItemName){
             }
     }
     return -1;
-   }
+};
+
