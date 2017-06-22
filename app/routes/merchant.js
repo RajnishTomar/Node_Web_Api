@@ -105,7 +105,7 @@ app.get('/productCategoryItems/:fileName/:merchantKey/', function (req, res) { /
    });
 })
 
-app.post('/addMerchantProductItems', function (req, res) {
+app.post('/addMerchantProductItems', function (req, res) { //add items under selected category for merchant, 
 
    reqJson =  req.body;
    console.log( reqJson );
