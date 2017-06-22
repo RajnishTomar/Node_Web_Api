@@ -188,6 +188,41 @@ app.post('/deleteMerchantProductItems', function (req, res) { //delete item for 
    });
 })
 
+app.post('/editMerchantProductCategoryItems', function (req, res) { //to add more items under different product category-fruits,vegetables,plants,patanjali
+   
+   reqJson =  req.body;
+   console.log( reqJson );
+   const fileName= reqJson["file_name"];
+   const merchantKey = reqJson["token"];
+   console.log( fileName );
+   // First read existing users.
+   fs.readFile("./" + fileName+".json", 'utf8', function (err, data) {
+       var dataDict = JSON.parse( data );
+       var dataArray = dataDict[merchantKey];
+       var newItem =  reqJson["item"];
+    
+       var position =  checkIfExist(dataArray,newItem["name"]);
+       if(position != -1){//might be merchant editing the already present item
+          dataArray[position] = newItem;
+       }else{
+         dataArray.push(newItem);
+       }
+       
+    
+        json = JSON.stringify(dataArray);
+       
+       fs.writeFile("./" + fileName+".json", json, 'utf8',function(err){
+          if(err){ 
+          throw err;
+          return;
+          }
+       });
+       var dict = {"status": "true", "message":"Added successfully"};
+       res.end( JSON.stringify(dict));
+   });
+      
+})
+
 //*********************************Home View Method Ends***********************************//
 
 //bottom curly brace is points to module closing

@@ -179,7 +179,7 @@ app.get('/productCategoryItems/:fileName/', function (req, res) {//will be fruit
    });
 })
 
-app.post('/addProductCategoryItems', function (req, res) { //to add more items under different product category-fruits,vegetables,plants,patanjali
+app.post('/addProductCategoryItems', function (req, res) { //to add/edit more items under different product category-fruits,vegetables,plants,patanjali
    
    reqJson =  req.body;
    console.log( reqJson );
