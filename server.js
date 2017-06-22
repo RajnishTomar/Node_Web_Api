@@ -7,7 +7,9 @@ var fs = require("fs");
 var lodash = require('lodash');
 var AWS = require('aws-sdk');
 
-var route = require('./app/routes')(app, {});
+require('./app/routes')(app, {});
+
+var utility = require('./app/routes/utility.js')(app,{})
 // Nodejs encryption with CTR
 // var crypto = require('crypto'),
 //     algorithm = 'aes-256-ctr',
@@ -59,7 +61,7 @@ app.get('/forgotPassword/:emailId/:isMerchant/', function (req, res) {
        }
        if (isExist){
        var responsedata = {};
-          route.sendEmailTo(emailId,user["password"], res);
+          utility.sendEmailTo(emailId,user["password"], res);
        }else{
           var dict = {"status": "false", "message":"Email Id doesn't found."};
           res.end(JSON.stringify(dict));
