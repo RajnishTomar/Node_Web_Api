@@ -8,11 +8,7 @@ var crypto = require('crypto'),
     
 password = '5669543';
 
-module.exports = function(app, db) {
-   // parse application/json
-   app.use(bodyParser.json()); 
-};
-
+module.exports = {};
 //*********************************Helper Methods***************************************//
 function checkIfExist(userCartArray, itemName){
 
@@ -32,21 +28,21 @@ function checkIfExist(userCartArray, itemName){
    return -1;
 
 }
-function encrypt(text){
+var encrypt = function (text){
   var cipher = crypto.createCipher(algorithm,password)
   var crypted = cipher.update(text,'utf8','hex')
   crypted += cipher.final('hex');
   return crypted;
 }
 
-function decrypt(text){
+var decrypt = function (text){
   var decipher = crypto.createDecipher(algorithm,password)
   var dec = decipher.update(text,'hex','utf8')
   dec += decipher.final('utf8');
   return dec;
 }
 
-function modifyFile(categoryName, itemName){
+var modifyFile = function (categoryName, itemName){
 
    console.log("selected category is ");
    console.log(categoryName);
@@ -81,7 +77,7 @@ function modifyFile(categoryName, itemName){
 
 }
 
-function writeJsonToFile(jsonArray,itemName,fileName){
+var writeJsonToFile = function (jsonArray,itemName,fileName){
 
    for (var i = 0; i < jsonArray.length; i++) {
            var dataDict =  jsonArray[i];
@@ -107,7 +103,7 @@ function writeJsonToFile(jsonArray,itemName,fileName){
 
 }
 
-function sendEmailTo(email, password, res){
+var sendEmailTo = function (email, password, res){
    // create reusable transporter object using the default SMTP transport
    let transporter = nodemailer.createTransport({
         host: 'smtp.gmail.com',
