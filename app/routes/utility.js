@@ -8,7 +8,8 @@ var crypto = require('crypto'),
     
 password = '5669543';
 
-module.exports = {};
+module.exports = {
+
 //*********************************Helper Methods***************************************//
 function checkIfExist(userCartArray, itemName){
 
@@ -28,21 +29,21 @@ function checkIfExist(userCartArray, itemName){
    return -1;
 
 }
-var encrypt = function (text){
+var function encrypt(text){
   var cipher = crypto.createCipher(algorithm,password)
   var crypted = cipher.update(text,'utf8','hex')
   crypted += cipher.final('hex');
   return crypted;
 }
 
-var decrypt = function (text){
+function decrypt(text){
   var decipher = crypto.createDecipher(algorithm,password)
   var dec = decipher.update(text,'hex','utf8')
   dec += decipher.final('utf8');
   return dec;
 }
 
-var modifyFile = function (categoryName, itemName){
+function modifyFile(categoryName, itemName){
 
    console.log("selected category is ");
    console.log(categoryName);
@@ -77,7 +78,7 @@ var modifyFile = function (categoryName, itemName){
 
 }
 
-var writeJsonToFile = function (jsonArray,itemName,fileName){
+function writeJsonToFile(jsonArray,itemName,fileName){
 
    for (var i = 0; i < jsonArray.length; i++) {
            var dataDict =  jsonArray[i];
@@ -103,7 +104,7 @@ var writeJsonToFile = function (jsonArray,itemName,fileName){
 
 }
 
-var sendEmailTo = function (email, password, res){
+function sendEmailTo(email, password, res){
    // create reusable transporter object using the default SMTP transport
    let transporter = nodemailer.createTransport({
         host: 'smtp.gmail.com',
@@ -141,3 +142,5 @@ var sendEmailTo = function (email, password, res){
         console.log('Message %s sent: %s', info.messageId, info.response);
    });
 }
+
+};
