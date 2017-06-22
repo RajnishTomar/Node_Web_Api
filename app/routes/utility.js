@@ -9,9 +9,9 @@ var crypto = require('crypto'),
 password = '5669543';
 
 module.exports = function(app, db) {
-
-// parse application/json
-app.use(bodyParser.json()); 
+   // parse application/json
+   app.use(bodyParser.json()); 
+};
 
 //*********************************Helper Methods***************************************//
 function checkIfExist(userCartArray, itemName){
@@ -145,5 +145,3 @@ function sendEmailTo(email, password, res){
         console.log('Message %s sent: %s', info.messageId, info.response);
    });
 }
-
-};
