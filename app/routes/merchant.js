@@ -24,6 +24,36 @@ app.get('/listMerchants', function (req, res) { //list all merchants, testes wor
    });
 })
 
+app.get('/merchantCustomer/:merchantKey/', function (req, res) {
+
+     var merchantKey =  req.params.merchantKey
+     console.log(merchantKey);
+     
+     fs.readFile("./" + "merchant-customers.json", 'utf8', function (err, data) {
+        data = JSON.parse( data );
+        const customerArray =  data[merchantKey];
+        var responseArray = [];
+        
+        fs.readFile("./" + "users.json", 'utf8', function (err, data) {
+               usersJson = JSON.parse( data );
+               for (var i = 0; i < customerArray.length; i++) {
+                     const customerKey = customerArray[i];
+                     responseArray.push(usersJson[customerKey]);
+               }
+               
+               //json = JSON.stringify(responseArray);
+               var dict = {};
+               if(responseArray.length>0){
+                    dict = {"status": "true", "message":"Customers list","list":responseArray};
+               }else{
+                    dict = {"status": "false", "message":"No Customers","list": []};
+               }
+               res.end( JSON.stringify(dict));  
+        });               
+    });
+
+});
+
 //*********************************Home View Methods***********************************//
 
 app.post('/addHomeProducts', function (req, res) { //add products corresponding to merchant, tested working fine
