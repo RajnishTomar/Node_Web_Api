@@ -87,14 +87,64 @@ app.get('/login/:emailId/:password/:isMerchant/', function (req, res) {
        users = JSON.parse( data );
        var key = encrypt(emailId+password);
        var user = users[key];
-       if (user){
+       
+       if (user != null){
+       
            console.log( user );
+           user["is_login"] = "true";
+           users[key] = user;
+           json = JSON.stringify(users);
+       
+           fs.writeFile("./" + fileName, json, 'utf8',function(err){
+               if(err) throw err;          
+           });
            user["token"] = key;
            user["status"] = "true";
-          res.end( JSON.stringify(user));
+           res.end( JSON.stringify(user));
+           
        }else{
+       
           var dict = {"status": "false", "message":"Invalid login credentials"};
           res.end(JSON.stringify(dict));
+          
+       } 
+   });
+})
+
+app.get('/logout/:token/:isMerchant/', function (req, res) {
+   // First read existing users.
+   var token =  req.params.token
+   var isMerchant = req.params.isMerchant;
+   console.log(token);
+   console.log(isMerchant);
+   
+   var fileName = "users.json";
+   if(isMerchant == "true"){
+      fileName = "merchant.json";
+   }
+   
+   fs.readFile("./" + fileName, 'utf8', function (err, data) {
+       users = JSON.parse( data );
+       var user = users[token];
+       
+       if (user != null){
+           user["is_login"] = "false";
+           users[token] = user;
+           json = JSON.stringify(users);
+       
+           fs.writeFile("./" + fileName, json, 'utf8',function(err){
+               if(err) throw err;          
+           });
+           
+           console.log( user );
+
+           res.end( JSON.stringify({"status":"1","message":"logout successfully"}));
+           
+       }else{
+       
+          var dict = {"status": "false", "message":"Unable to logout, please try after some time."};
+          res.end(JSON.stringify(dict));
+          
        } 
    });
 })

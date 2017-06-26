@@ -9,7 +9,7 @@
 		"wallet_amount": "0",
 		"is_phone_verified": "true",
 		"is_email_verified": "false",
-		"is_merchant": "false"
+		"is_login": "false"
 	},
 	"97b762e13e9bea5a8913c113bf5e4156ee5d7c79f5d814": {
 		"first_name": "rajesh",
@@ -21,6 +21,6 @@
 		"wallet_amount": "0",
 		"is_phone_verified": "true",
 		"is_email_verified": "false",
-		"is_merchant": "false"
+		"is_login": "false"
 	}
 }
