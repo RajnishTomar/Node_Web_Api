@@ -24,6 +24,42 @@ app.get('/listMerchants', function (req, res) { //list all merchants, testes wor
    });
 })
 
+app.post('/updateMerchantProfile', function (req, res) { //update merchant profile data
+
+   reqJson =  req.body;
+   console.log( reqJson );
+   const key = reqJson["token"];
+   console.log(key);
+   const updatedDataDict =  reqJson["data"];
+   
+   fs.readFile("./" + "merchant.json", 'utf8', function (err, data) {
+        var data = JSON.parse( data );
+        
+        merchantDataDict = data[key];
+        merchantDataDict["first_name"] = updatedDataDict["first_name"];
+        merchantDataDict["last_name"] = updatedDataDict["last_name"];
+        merchantDataDict["phone_no"] = updatedDataDict["phone_no"];
+        merchantDataDict["location"] = updatedDataDict["location"];
+        merchantDataDict["is_phone_verified"] = updatedDataDict["is_phone_verified"];
+        merchantDataDict["is_email_verified"] = updatedDataDict["is_email_verified"];
+        
+        data[key] =  merchantDataDict;
+        
+        json = JSON.stringify(data);
+        fs.writeFile("./" + "merchant.json", json, 'utf8',function(err){
+              if(err){ 
+                throw err;
+                 return;
+              }
+        }); 
+        
+        var dict = {"status": "true", "message":"Profile updated successfully"};
+        res.end( JSON.stringify(dict));                 
+    });
+   
+   
+})
+
 app.get('/merchantCustomer/:merchantKey/', function (req, res) {
 
      var merchantKey =  req.params.merchantKey
