@@ -138,7 +138,7 @@ app.get('/logout/:token/:isMerchant/', function (req, res) {
            
            console.log( user );
 
-           res.end( JSON.stringify({"status":"1","message":"logout successfully"}));
+           res.end( JSON.stringify({"status":"true","message":"logout successfully"}));
            
        }else{
        
