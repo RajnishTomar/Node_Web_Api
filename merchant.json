@@ -1,6 +1,3 @@
-
-
-
 {
 	"91b965e53fddd8428215c70ff97d575ab304256ea3834a2b4b8e29a81f32": {
 		"first_name": "Rajnish Kumar",
@@ -35,8 +32,7 @@
 		"location": "Punjab ",
 		"is_phone_verified": "true",
 		"is_email_verified": "true",
-		"is_merchant": "true",
-		"is_login": "true"
+		"is_login": "false"
 	}
 }
 

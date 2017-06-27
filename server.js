@@ -158,7 +158,7 @@ app.post('/addUser', function (req, res) {
 
    for (var i = 0; i < reqJson.length; i++) { //this array will always has single element
            var dataDict =  reqJson[i];
-           if(dataDict["is_merchant"] == "true"){
+           if(dataDict["is_login"] == "false"){
                isMerchant = true
            }
    }
