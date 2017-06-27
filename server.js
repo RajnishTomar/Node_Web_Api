@@ -176,7 +176,7 @@ app.post('/addUser', function (req, res) {
                   var key = encrypt(dataDict["email_id"]+dataDict["password"]);
                   data[key] = reqJson[i];
                   var merchantDict = data[key];
-                  merchantDict["customers"] = {};//on merchant sign up  there blank dictionary for customers
+                 //on merchant sign up  there blank dictionary for customers
                   data[key] = merchantDict;
               }
        
