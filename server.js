@@ -158,7 +158,7 @@ app.post('/addUser', function (req, res) {
 
    for (var i = 0; i < reqJson.length; i++) { //this array will always has single element
            var dataDict =  reqJson[i];
-           if(dataDict["is_login"] == "false"){
+           if(dataDict["is_merchant"] == "true"){
                isMerchant = true
            }
    }
@@ -173,8 +173,10 @@ app.post('/addUser', function (req, res) {
               //var keys = Object.keys(reqJson);
               for (var i = 0; i < reqJson.length; i++) {
                   var dataDict =  reqJson[i];
+                  delete dataDict["is_merchant"];
+                  dataDict["url"] = "https://s3.ap-south-1.amazonaws.com/sabjibazzar/merchant/merchant.png";
                   var key = encrypt(dataDict["email_id"]+dataDict["password"]);
-                  data[key] = reqJson[i];
+                  data[key] = dataDict;
                   var merchantDict = data[key];
                  //on merchant sign up  there blank dictionary for customers
                   data[key] = merchantDict;
@@ -197,8 +199,9 @@ app.post('/addUser', function (req, res) {
               //var keys = Object.keys(reqJson);
               for (var i = 0; i < reqJson.length; i++) {
                   var dataDict =  reqJson[i];
+                  delete dataDict["is_merchant"];
                   var key = encrypt(dataDict["email_id"]+dataDict["password"]);
-                  data[key] = reqJson[i];
+                  data[key] = dataDict;
               }
        
               json = JSON.stringify(data);

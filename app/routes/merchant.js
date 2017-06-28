@@ -70,6 +70,12 @@ app.get('/merchantCustomer/:merchantKey/', function (req, res) {
         const customerArray =  data[merchantKey];
         var responseArray = [];
         
+        if(customerArray == null){
+           dict = {"status": "false", "message":"No Customers","list": []};
+           res.end( JSON.stringify(dict)); 
+           return;
+        }
+        
         fs.readFile("./" + "users.json", 'utf8', function (err, data) {
                usersJson = JSON.parse( data );
                for (var i = 0; i < customerArray.length; i++) {
