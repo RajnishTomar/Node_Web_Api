@@ -226,6 +226,7 @@ app.post('/addUser', function (req, res) {
 app.get('/productCategoryItems/:fileName/', function (req, res) {//will be fruits, vegetables,plants,patanjali,grocery
 
    var fileName =  req.params.fileName
+   console.log( fileName );
    fs.readFile("./" + fileName+".json", 'utf8', function (err, data) {
        console.log( data );
        res.end( data );
