@@ -141,6 +141,38 @@ app.post('/addHomeProducts', function (req, res) { //add products corresponding 
    
 })
 
+app.post('/addPatanjaliProducts', function (req, res) { //add products corresponding to merchant, tested working fine
+
+   reqJson =  req.body;
+   console.log( reqJson );
+   const key = reqJson["token"];
+   console.log(key);
+   var productsArray = reqJson["item"];
+   
+   if(productsArray == null || key == null){
+       var dict = {"status": "false", "message":"Merchant Invalid"};
+       res.end( JSON.stringify(dict));
+   }
+   
+   fs.readFile("./" + "merchant-patanjali.json", 'utf8', function (err, data) {
+        data = JSON.parse( data );
+        data[key] =  productsArray;
+                
+        json = JSON.stringify(data);
+        fs.writeFile("./" + "merchant-patanjali.json", json, 'utf8',function(err){
+              if(err){ 
+                throw err;
+                 return;
+              }
+        }); 
+        
+        var dict = {"status": "true", "message":"Products Added successfully"};
+        res.end( JSON.stringify(dict));                 
+   });
+   
+   
+})
+
 app.get('/homeProducts/:merchantKey/', function (req, res) { //merchant products. tested working fine
 
    var merchantKey =  req.params.merchantKey
