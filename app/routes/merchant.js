@@ -359,16 +359,7 @@ app.post('/postImage', function (req, res) {
     req.on('end', function (){
         wstream.end();
         console.log('File saved.')
-        
-             
-             // fs.unlink(sourceUrl, function(status){
-//              });
-             var result = [];
-             var dict = {"status": "true", "message":"Added successfully", "image_url":filePath};
-             result.push(dict)
-             res.end( JSON.stringify(result));
-          
-             //uploadToS3(nm,filePath, res);  
+        uploadToS3(nm,filePath, res);  
     });
 
 })
