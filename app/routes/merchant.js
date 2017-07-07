@@ -342,7 +342,7 @@ app.post('/editMerchantProductCategoryItems', function (req, res) { //to add mor
 app.post('/postImage', function (req, res) {
 
      AWS.config.update({
-      accessKeyId: "AKIAJKV3HUTTGQW7DLHA",  // old access key : AKIAJKV3HUTTGQW7DLHA
+      accessKeyId: "AKIAJG4EPUMSGK6UBN4Q",  // old access key : AKIAJKV3HUTTGQW7DLHA
       secretAccessKey: "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",  //od secret key : iY2S12wVq753KT0xYNJstQlPE49ACQWNWjwo9oUU
       "region": "ap-south-1" 
     });
