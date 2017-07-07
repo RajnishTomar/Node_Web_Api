@@ -392,7 +392,7 @@ function uploadToS3(fileName,sourceUrl, res){
              fs.unlink(sourceUrl, function(status){
              });
              var result = [];
-             const location = "image_url":data["Location"];
+             const location = data["Location"]; //"image_url":
              var dict = {"status": "true", "message":"Added successfully"};
              result.push(dict)
              res.end( JSON.stringify(result));
