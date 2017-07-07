@@ -361,8 +361,8 @@ app.post('/postImage', function (req, res) {
         console.log('File saved.')
         
              
-             fs.unlink(sourceUrl, function(status){
-             });
+             // fs.unlink(sourceUrl, function(status){
+//              });
              var result = [];
              var dict = {"status": "true", "message":"Added successfully", "image_url":filePath};
              result.push(dict)
