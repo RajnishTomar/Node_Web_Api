@@ -391,16 +391,11 @@ function uploadToS3(fileName,sourceUrl, res){
              
              fs.unlink(sourceUrl, function(status){
              });
-             var result = [];
-             const location = data["Location"]; //"image_url":
-             var dict = {"status": "true", "message":"Added successfully"};
-             result.push(dict)
-             res.end( JSON.stringify(result));
+             var dict = {"status": "true", "message":"Added successfully", "image_url":data["Location"]};
+             res.end( JSON.stringify(dict));
           }else{
-          var result = [];
              var dict = {"status": "false", "message":"Not added successfully"};
-             result.push(dict)
-             res.end( JSON.stringify(result));
+             res.end( JSON.stringify(dict));
           }
      });
   
