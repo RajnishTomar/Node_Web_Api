@@ -1,6 +1,9 @@
+var express = require('express');
 var bodyParser = require('body-parser');
 var fs = require("fs");
 var lodash = require('lodash');
+
+var url = require('url');
 var AWS = require('aws-sdk');
 
 var utility = require('./utility');
@@ -8,6 +11,8 @@ var utility = require('./utility');
 module.exports = function(app, db) {
 
 app.use(bodyParser.json());
+app.use('/public', express.static(__dirname + '/public'));  //to save image file locally before upload to s3
+app.use(express.static(__dirname + '/public')); 
 
 app.get('/listMerchants', function (req, res) { //list all merchants, testes working fine
 
@@ -331,6 +336,73 @@ app.post('/editMerchantProductCategoryItems', function (req, res) { //to add mor
 })
 
 //*********************************Home View Method Ends***********************************//
+
+//*********************************UPLOAD IMAGE TO S3***************************************//
+
+app.post('/postImage', function (req, res) {
+
+     AWS.config.update({
+      accessKeyId: "AKIAJKV3HUTTGQW7DLHA",
+      secretAccessKey: "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",
+      "region": "ap-south-1" 
+    });
+    
+    let nm = Date.now();
+    filePath = __dirname + '/public/' + nm + '.png';
+    
+    var wstream = fs.createWriteStream(filePath);
+    req.on('data', function(data) {
+        console.log('get data.')
+        wstream.write(data);
+    });
+    
+    req.on('end', function (){
+        wstream.end();
+        console.log('File saved.')
+        uploadToS3(nm,filePath, res);  
+    });
+
+})
+
+function uploadToS3(fileName,sourceUrl, res){
+
+  // Create a bucket and upload something into it
+  var bucketName = 'sabjibazzar';
+  var keyName = fileName+'.png';
+      
+  // Create an S3 client
+  var s3 = new AWS.S3({params: {Bucket: bucketName, Key: keyName}});
+      
+  s3.createBucket({Bucket: bucketName}, function() {
+
+  var body = fs.createReadStream(sourceUrl);// fs.createReadStream('/Users/rajnishtomar/Desktop/coconut.png')
+               //.pipe(zlib.createGzip());
+  s3.upload({Body: body})
+    .on('httpUploadProgress', function(evt) { 
+         console.log(evt);
+     })
+     .send(function(err, data) { 
+          console.log(err, data) 
+          if(err == null){
+             
+             fs.unlink(sourceUrl, function(status){
+             });
+             var result = [];
+             var dict = {"status": "true", "message":"Added successfully", "image_url":data["Location"]};
+             result.push(dict)
+             res.end( JSON.stringify(result));
+          }else{
+          var result = [];
+             var dict = {"status": "false", "message":"Not added successfully"};
+             result.push(dict)
+             res.end( JSON.stringify(result));
+          }
+     });
+  
+  });
+}
+
+//*********************************UPLOAD IMAGE TO S3 ENDS***************************************//
 
 //bottom curly brace is points to module closing
 };
