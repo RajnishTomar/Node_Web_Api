@@ -344,7 +344,7 @@ app.post('/postImage', function (req, res) {
      var requestHeaders =  req.headers;
      const accessKey = requestHeaders['access-key'];
      const secretKey = requestHeaders['secret-key'];
-     console.log();
+     console.log(requestHeaders);
      AWS.config.update({
       accessKeyId: accessKey,  // old access key : AKIAJKV3HUTTGQW7DLHA
       secretAccessKey: secretKey,  //od secret key : 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
