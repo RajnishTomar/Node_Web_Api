@@ -295,7 +295,6 @@ app.post('/addToCart', function (req, res) {
           console.log("position" + position);
           var item = userCartArray[position];
           item["quantity"] = newItem["quantity"];
-          item["unit_count"] = newItem["unit_count"];
           item["is_selected_for_checkout"] = "true"
           userCartArray[position] = item;
        }else{
