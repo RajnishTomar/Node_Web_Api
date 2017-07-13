@@ -514,7 +514,7 @@
 	"quantity_kg": "1",
 	"price": "65",
 	"price_per_kg": "60",
-	"price_per_unit": "10",
+	"price_per_unit": "",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/chhole.jpg"
