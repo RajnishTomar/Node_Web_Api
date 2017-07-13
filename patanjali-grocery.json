@@ -611,21 +611,21 @@
 }, {
 	"name": "namkeen",
 	"price_per_kg": "",
-	"price_per_unit": "250",
+	"price_per_unit": "",
 	"description": "tasty",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/blank_image.png",
 	"price": "65",
-	"quantity_gm": "",
+	"quantity_gm": "250",
 	"quantity_kg": "",
 	"cart_status": "false"
 }, {
 	"name": "jdh",
 	"price_per_kg": "",
-	"price_per_unit": "500",
+	"price_per_unit": "",
 	"description": "ndnd",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/blank_image.png",
 	"price": "58",
-	"quantity_gm": "",
+	"quantity_gm": "500",
 	"quantity_kg": "",
 	"cart_status": "false"
 }, {
