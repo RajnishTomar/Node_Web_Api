@@ -29,15 +29,16 @@ app.get('/listMerchants', function (req, res) { //list all merchants, testes wor
    });
 })
 
-app.post('/updateMerchantProfile', function (req, res) { //update merchant profile data
+app.post('/updateProfile', function (req, res) { //update merchant profile data
 
    reqJson =  req.body;
    console.log( reqJson );
    const key = reqJson["token"];
+   const fileName = reqJson["file_name"];
    console.log(key);
    const updatedDataDict =  reqJson["data"];
    
-   fs.readFile("./" + "merchant.json", 'utf8', function (err, data) {
+   fs.readFile("./" + fileName+".json", 'utf8', function (err, data) {
         var data = JSON.parse( data );
         
         merchantDataDict = data[key];
