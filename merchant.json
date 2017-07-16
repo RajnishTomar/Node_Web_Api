@@ -1,36 +1,50 @@
 {
-	"97b762e13e9bea5a8913c113bf5e4156ee5d7c79f5d814": {
-		"first_name": "rajesh",
-		"last_name": "chandra",
-		"email_id": "rajesh@yahoo.com",
+	"91b965e53fddd8428215c70ff97d575ab304256ea3834a2b4b8e29a81f32": {
+		"first_name": "Rajnish Kumar",
+		"last_name": "Tomar",
+		"email_id": "tomar.rajnish@yahoo.com",
+		"phone_no": "+917042108257",
+		"password": "5669543",
+		"location": "A-451 Chhattarpur New Delhi 110074",
+		"is_phone_verified": "true",
+		"is_email_verified": "true",
+		"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/merchant/merchant.png",
+		"is_login": "false"
+	},
+	"88b766f10d8acb4b8714801ffe501b0ded527f74f3": {
+		"first_name": "Manu",
+		"last_name": "Chaudhary ",
+		"email_id": "manu@yahoo.com",
+		"phone_no": "+917042108257",
+		"password": "5669543",
+		"location": "Chhatarpur new Delhi ",
+		"is_phone_verified": "true",
+		"is_email_verified": "false",
+		"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/merchant/merchant.png",
+		"is_login": "false"
+	},
+	"97b762ea2480c2489d16cf0ea00d1e029b0c2721a980097d12d525ab1d383200c0": {
+		"first_name": "raman",
+		"last_name": "kaur",
+		"email_id": "rajnishkumar1009@gmail.com",
+		"phone_no": "+917042108257",
+		"password": "5669543",
+		"location": "Punjab ",
+		"is_phone_verified": "true",
+		"is_email_verified": "true",
+		"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/merchant/merchant.png",
+		"is_login": "false"
+	},
+	"88b966ed2692ea5a8913c113bf5e4156ee5d7c79f5d814": {
+		"first_name": "monika",
+		"last_name": "kausik",
+		"email_id": "monika@yahoo.com",
 		"phone_no": "+917042108257",
 		"password": "5669543",
 		"location": "418, Main Chhatarpur Road,New Delhi,Delhi,India,110074",
-		"wallet_amount": "0",
 		"is_phone_verified": "true",
 		"is_email_verified": "false",
-		"is_login": "false"
-	},
-	"88b960e523b3d3428014c152f252430eed5d7375f4df": {
-		"first_name": "mohan",
-		"last_name": "rai",
-		"email_id": "mohan@yahoo.com",
-		"phone_no": "+917042108257",
-		"password": "5669543",
-		"location": "new delhi",
-		"is_phone_verified": "true",
-		"is_email_verified": "false",
-		"is_login": "true"
-	},
-	"86be69ea2e9bcb4fa802cf14fe520058b4067f76f6d5122a4e": {
-		"first_name": "chancal",
-		"last_name": "teotia",
-		"email_id": "chanchal@yahoo.com",
-		"phone_no": "+917042108257",
-		"password": "5669543",
-		"location": "9, Chhatarpur Road,New Delhi,Delhi,India,110074",
-		"is_phone_verified": "true",
-		"is_email_verified": "false",
-		"is_login": "false"
+		"is_login": "false",
+		"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/merchant/merchant.png"
 	}
 }
