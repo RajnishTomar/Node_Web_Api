@@ -52,7 +52,7 @@ app.post('/updateProfile', function (req, res) { //update merchant profile data
         data[key] =  merchantDataDict;
         
         json = JSON.stringify(data);
-        fs.writeFile("./" + "merchant.json", json, 'utf8',function(err){
+        fs.writeFile("./" + fileName+".json", json, 'utf8',function(err){
               if(err){ 
                 throw err;
                  return;
