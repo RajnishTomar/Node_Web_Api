@@ -1,520 +1,520 @@
 [{
 	"name": "Marie Biscuits",
 	"price": "12",
-	"capacity":"120",
-	"measurement_type":"gram",
+	"capacity": "120",
+	"measurement_type": "gram",
 	"description": "",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/Marie-Biscuit.png",
 	"cart_status": "false"
 }, {
 	"name": "Nutty Delite",
 	"price": "15",
-	"capacity":"100",
-	"measurement_type":"gram",
+	"capacity": "100",
+	"measurement_type": "gram",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/Nutty-Delite-Biscuit.png"
 }, {
 	"name": "Patanjali Doodh Biscuits",
 	"price": "10",
-	"capacity":"100",
-	"measurement_type":"gram",,
+	"capacity": "100",
+	"measurement_type": "gram",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/Patanjali-Doodh-Biscuit.png"
 }, {
 	"name": "Nariyal Biscuit",
 	"price": "10",
-	"capacity":"100",
-	"measurement_type":"gram",
+	"capacity": "100",
+	"measurement_type": "gram",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/Patanjali-Nariyal-Biscuits.png"
 }, {
 	"name": "Orange Delite Biscuits",
 	"price": "10",
-	"capacity":"75",
-	"measurement_type":"gram",
+	"capacity": "75",
+	"measurement_type": "gram",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/Patanjali-Orange-Delite-Biscuits.png"
 }, {
 	"name": "Elaichi Biscuit",
 	"price": "10",
-	"capacity":"75",
-	"measurement_type":"gram",
+	"capacity": "75",
+	"measurement_type": "gram",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/Patanjali-Elaichi-Delite-Biscuits.png"
 }, {
 	"name": "Aarogya Biscuit",
 	"price": "10",
-	"capacity":"100",
-	"measurement_type":"gram",
+	"capacity": "100",
+	"measurement_type": "gram",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/Patanjali-Aarogya-Biscuits.png"
 }, {
 	"name": "Bandhani Hing",
 	"price": "40",
-	"capacity":"25",
-	"measurement_type":"gram",
+	"capacity": "25",
+	"measurement_type": "gram",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/Patanjali-Bandhani-+Hing.png"
 }, {
 	"name": "Black Pepper Powder",
 	"price": "125",
-	"capacity":"100",
-	"measurement_type":"gram",
+	"capacity": "100",
+	"measurement_type": "gram",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/black-pepper.png"
 }, {
 	"name": "Black Pepper Whole",
 	"price": "12",
-	"capacity":"100",
-	"measurement_type":"gram",
+	"capacity": "100",
+	"measurement_type": "gram",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/PATANJALI-BLACK-PEPPER-WHOLE.png"
 }, {
 	"name": "Chaat Masala",
 	"price": "36",
-	"capacity":"100",
-	"measurement_type":"gram",
+	"capacity": "100",
+	"measurement_type": "gram",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/Patanjali-Spice-Chaat-Masala.png"
 }, {
 	"name": "Choley Masala",
 	"price": "45",
-	"capacity":"100",
-	"measurement_type":"gram",
+	"capacity": "100",
+	"measurement_type": "gram",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/Patanjali-Chhole-Masala.png"
 }, {
 	"name": "Coriander Powder / िपसा धिनया",
 	"price": "30",
-	"capacity":"100",
-	"measurement_type":"gram",
+	"capacity": "100",
+	"measurement_type": "gram",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/Patanjali-Coriande-Powder.png"
 }, {
 	"name": "Cumin Whole / ज़ीरा दाना",
 	"price": "40",
-	"capacity":"100",
-	"measurement_type":"gram",
+	"capacity": "100",
+	"measurement_type": "gram",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/patanjali-cumin-whole.png"
 }, {
 	"name": "Fenugreek Whole / मेथी दाना",
 	"price": "20",
-	"capacity":"100",
-	"measurement_type":"gram",
+	"capacity": "100",
+	"measurement_type": "gram",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/patanjali-fenugreek-whole.png"
 }, {
 	"name": "Garam Masala / गरम मसाला",
 	"price": "65",
-	"capacity":"100",
-	"measurement_type":"gram",
+	"capacity": "100",
+	"measurement_type": "gram",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/Patanjali0-Garam-Masala.png"
 }, {
 	"name": "Red Chilli Powder / िपसी लाल िम",
 	"price": "60",
-	"capacity":"200",
-	"measurement_type":"gram",
+	"capacity": "200",
+	"measurement_type": "gram",
 	"description": "",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/Patanjali-Red-Chilli-Powder.png",
 	"cart_status": "false"
 }, {
 	"name": "Sabzi Masala / स􀁄ज़ी मसाला",
 	"price": "38",
-	"capacity":"100",
-	"measurement_type":"gram",
+	"capacity": "100",
+	"measurement_type": "gram",
 	"description": "",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/Patanjali-Sabzi-Masala.png",
 	"cart_status": "false"
 }, {
 	"name": "Turmeric Powder / िपसी ह􀀝दी",
 	"price": "24",
-	"capacity":"100",
-	"measurement_type":"gram",
+	"capacity": "100",
+	"measurement_type": "gram",
 	"description": "",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/Patanjali-Turmeric-Powder.png",
 	"cart_status": "false"
 }, {
 	"name": "Ajowan / अजवाइन",
 	"price": "38",
-	"capacity":"100",
-	"measurement_type":"gram",
+	"capacity": "100",
+	"measurement_type": "gram",
 	"description": "",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/pachak-Ajwain.png",
 	"cart_status": "false"
 }, {
 	"name": "Amla Candy / अमला क􀀵 डी",
 	"price": "140",
-	"capacity":"500",
-	"measurement_type":"gram",
+	"capacity": "500",
+	"measurement_type": "gram",
 	"description": "",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/amla-candy.png",
 	"cart_status": "false"
 }, {
 	"name": "Amla Chatpata / अमला चटपटा",
 	"price": "145",
-	"capacity":"500",
-	"measurement_type":"gram",
+	"capacity": "500",
+	"measurement_type": "gram",
 	"description": "",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/amla-chatpata-candy.png",
 	"cart_status": "false"
 }, {
 	"name": "Bel Candy / बेल क􀀵 डी",
 	"price": "144",
-	"capacity":"500",
-	"measurement_type":"gram",
+	"capacity": "500",
+	"measurement_type": "gram",
 	"description": "",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/bel-candy.png",
 	"cart_status": "false"
 }, {
 	"name": "Mango Candy / आम क􀀵 डी",
 	"price": "55",
-	"capacity":"250",
-	"measurement_type":"gram",
+	"capacity": "250",
+	"measurement_type": "gram",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/Patanjali+Mango+Candy.png"
 }, {
 	"name": "Divya Peya / िद􀀓य पेय",
 	"price": "50",
-	"capacity":"100",
-	"measurement_type":"gram",
+	"capacity": "100",
+	"measurement_type": "gram",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/divya-pay.png"
 }, {
 	"name": "Divya Herbal Peya / िद􀀓य पेय",
 	"price": "70",
-	"capacity":"50",
-	"measurement_type":"gram",
+	"capacity": "50",
+	"measurement_type": "gram",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/divgya-herbal-pay.jpg"
 }, {
 	"name": "Mix Fruit Jam / िम􀀔स फू􀀘 ट जैम",
 	"price": "70",
-	"capacity":"500",
-	"measurement_type":"gram",
+	"capacity": "500",
+	"measurement_type": "gram",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/Patanjali-Mixed-Fruit-Jam.jpg"
 }, {
 	"name": "Pineapple Jam / पाइनए􀀻पल जैम",
 	"price": "70",
-	"capacity":"500",
-	"measurement_type":"gram",
+	"capacity": "500",
+	"measurement_type": "gram",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/patanjali-pineapple-jam.jpg"
 }, {
 	"name": "Guava Jam / अम􀁅द जैम",
 	"price": "150",
-	"capacity":"500",
-	"measurement_type":"gram",
+	"capacity": "500",
+	"measurement_type": "gram",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/patanjali-guava-jam.jpg"
 }, {
 	"name": "Amla Murraba / अमला मरु 􀁄बा",
 	"price": "120",
-	"capacity":"1",
-	"measurement_type":"kg",
+	"capacity": "1",
+	"measurement_type": "kg",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/patanjali-amla-murabba.jpg"
 }, {
 	"name": "Apple Murraba / सबे मरु 􀁄बा",
 	"price": "120",
-	"capacity":"1",
-	"measurement_type":"kg",
+	"capacity": "1",
+	"measurement_type": "kg",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/Patanjali+Apple+Murabba.jpeg"
 }, {
 	"name": "Bel Murabba / बेल मरु 􀁄बा",
 	"price": "110",
-	"capacity":"1",
-	"measurement_type":"kg",
+	"capacity": "1",
+	"measurement_type": "kg",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/Patanjali-Bel-Murabba.jpg"
 }, {
 	"name": "Harad Murabba / हरड़ मरु 􀁄बा",
 	"price": "115",
-	"capacity":"1",
-	"measurement_type":"kg",
+	"capacity": "1",
+	"measurement_type": "kg",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/Patanjali-Harad-Murabba.jpg"
 }, {
 	"name": "Chocolate Soan Papdi / चॉकलेट सोन पापड़ी",
 	"price": "160",
-	"capacity":"250",
-	"measurement_type":"gram",
+	"capacity": "250",
+	"measurement_type": "gram",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/Chocolate-Soan-Papdi.jpg"
 }, {
 	"name": "Elaichi Soan Papdi / इलाइची सोन पापड़ी",
 	"price": "105",
-	"capacity":"500",
-	"measurement_type":"gram",
+	"capacity": "500",
+	"measurement_type": "gram",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/soan-papdi-elaichi.png"
 }, {
 	"name": "Orange Soan Papdi / ऑर􀀴ज सोन पापड़ी",
 	"price": "55",
-	"capacity":"250",
-	"measurement_type":"gram",
+	"capacity": "250",
+	"measurement_type": "gram",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/Orange-Soan-Papdi.png"
 }, {
 	"name": "Madhuram Sugar Jaggery Powder / मधरु ं शगु र",
 	"price": "60",
-	"capacity":"1",
-	"measurement_type":"kg",
+	"capacity": "1",
+	"measurement_type": "kg",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/Patanjali-Madhuram-Gur-Powder.jpg"
 }, {
 	"name": "Barley Dalia / बाल􀁇 दिलया",
 	"price": "30",
-	"capacity":"500",
-	"measurement_type":"gram",
+	"capacity": "500",
+	"measurement_type": "gram",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/patanjali-barley-jau-dalia.jpg"
 }, {
 	"name": "Wheat Dalia / वीट दिलया",
 	"price": "22",
-	"capacity":"500",
-	"measurement_type":"gram",
+	"capacity": "500",
+	"measurement_type": "gram",
 	"description": "",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/Patanjali-Wheat-Dalia.jpg",
 	"cart_status": "false"
 }, {
 	"name": "Pushtahar Dalia / प􀁈ु टाहार दिलया",
 	"price": "40",
-	"capacity":"500",
-	"measurement_type":"gram",
+	"capacity": "500",
+	"measurement_type": "gram",
 	"description": "",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/patanjali-pushtahar-dalia.jpg",
 	"cart_status": "false"
 }, {
 	"name": "Patanjali Besan / पतंजिल बेसन",
 	"price": "90",
-	"capacity":"500",
-	"measurement_type":"gram",
+	"capacity": "500",
+	"measurement_type": "gram",
 	"description": "",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/patanjali-besan.jpg",
 	"cart_status": "false"
 }, {
 	"name": "Amla Pickle / अमला अचार",
 	"price": "95",
-	"capacity":"1",
-	"measurement_type":"kg",
+	"capacity": "1",
+	"measurement_type": "kg",
 	"description": "",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/Patanjali-Amla-Pickle.jpg",
 	"cart_status": "false"
 }, {
 	"name": "Lemon Pickle / नीबं ू अचार",
 	"price": "65",
-	"capacity":"400",
-	"measurement_type":"gram",
+	"capacity": "400",
+	"measurement_type": "gram",
 	"description": "",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/patanjali-lemon-pickle.jpg",
 	"cart_status": "false"
 }, {
 	"name": "Tomato Ketchup / टोमेटो केचप",
 	"price": "70",
-	"capacity":"500",
-	"measurement_type":"gram",
+	"capacity": "500",
+	"measurement_type": "gram",
 	"description": "",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/patanjali_tomato_ketchup.jpg",
 	"cart_status": "false"
 }, {
 	"name": "Apple Chutney / ए􀀻पल चटनी",
 	"price": "70",
-	"capacity":"500",
-	"measurement_type":"gram",
+	"capacity": "500",
+	"measurement_type": "gram",
 	"description": "",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/patanjali-apple-chutney.jpg",
 	"cart_status": "false"
 }, {
 	"name": "Kachi Ghani Mustard Oil (L) / क􀀟ची घानी म􀀁टड􀀽 आयल",
 	"price": "135",
-	"capacity":"950",
-	"measurement_type":"gram",
+	"capacity": "950",
+	"measurement_type": "gram",
 	"description": "",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/Patanjali-Mustard-Oil.jpg",
 	"cart_status": "false"
 }, {
 	"name": "Choco Flakes / चोको 􀁁ल􀀔े स",
 	"price": "55",
-	"capacity":"125",
-	"measurement_type":"gram",
+	"capacity": "125",
+	"measurement_type": "gram",
 	"description": "",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/patanjali-choco-flakes.jpg",
 	"cart_status": "false"
 }, {
 	"name": "Corn Flakes Mix / कॉन􀀽 􀁁ले􀀔स िम􀀔स",
 	"price": "85",
-	"capacity":"250",
-	"measurement_type":"gram",
+	"capacity": "250",
+	"measurement_type": "gram",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/patanjali_corn_flakes_mix.jpg"
 }, {
 	"name": "Unpolished Rajma (chitra) / राजमा",
 	"price": "100",
-	"capacity":"1",
-	"measurement_type":"kg",
+	"capacity": "1",
+	"measurement_type": "kg",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/patanjali-rajma-chitra.jpg"
 }, {
 	"name": "Unpolished Chana / चना",
 	"price": "58",
-	"capacity":"1",
-	"measurement_type":"kg",
+	"capacity": "1",
+	"measurement_type": "kg",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/unpolished-chana.jpg"
 }, {
 	"name": "Unpolished Arhar Dal / अरहर दाल",
 	"price": "88",
-	"capacity":"1",
-	"measurement_type":"kg",
+	"capacity": "1",
+	"measurement_type": "kg",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/patanjali-unpolished-arhar-dal.jpg"
 }, {
 	"name": "Unpolished Chhole / छोले",
 	"price": "65",
-	"capacity":"1",
-	"measurement_type":"kg",
+	"capacity": "1",
+	"measurement_type": "kg",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/chhole.jpg"
 }, {
 	"name": "Basmati Rice Diamond / बासमती राइस डायमंड",
 	"price": "145",
-	"capacity":"1",
-	"measurement_type":"kg",
+	"capacity": "1",
+	"measurement_type": "kg",
 	"description": "",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/patanjali-basmati-rice-diamond.jpg",
 	"cart_status": "false"
 }, {
 	"name": "Basmati Rice Gold / बासमती राइस गो􀀝ड",
 	"price": "110",
-	"capacity":"1",
-	"measurement_type":"kg",
+	"capacity": "1",
+	"measurement_type": "kg",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/patanjali-basmati-rice-gold.jpg"
 }, {
 	"name": "Basmati Rice Silver / बासमती राइस िस􀀝वर",
 	"price": "110",
-	"capacity":"1",
-	"measurement_type":"kg",
+	"capacity": "1",
+	"measurement_type": "kg",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/rice-silver.jpg"
 }, {
 	"name": "Atta Noodles / आटा नूड􀀝स",
 	"price": "115",
-	"capacity":"70",
-	"measurement_type":"gram",
+	"capacity": "70",
+	"measurement_type": "gram",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/Patanjali-Atta-Instant-Noodles.jpg"
 }, {
 	"name": "Atta Noodles Chatpata / आटा नूड􀀝स चटपटा",
 	"price": "10",
-	"capacity":"60",
-	"measurement_type":"gram",
+	"capacity": "60",
+	"measurement_type": "gram",
 	"description": "",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/Patanjali-Atta-Chatpata-Noodles.jpg",
 	"cart_status": "false"
 }, {
 	"name": "Atta Noodles Classic / आटा नूड􀀝स 􀀔लािसक",
 	"price": "10",
-	"capacity":"60",
-	"measurement_type":"gram",
+	"capacity": "60",
+	"measurement_type": "gram",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/patanjali_atta_noodles.jpg"
 }, {
 	"name": "Patanjali Bura / पतंजिल बूरा",
 	"price": "65",
-	"capacity":"1",
-	"measurement_type":"kg",
+	"capacity": "1",
+	"measurement_type": "kg",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/patanjali-bura.jpg"
 }, {
 	"name": "Oats / ओ􀀫स",
 	"price": "35",
-	"capacity":"200",
-	"measurement_type":"gram",
+	"capacity": "200",
+	"measurement_type": "gram",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/patanjali-oats.jpg"
 }, {
 	"name": "Kali Mirch Papad / काली िमच􀀽 पापड़",
 	"price": "50",
-	"capacity":"200",
-	"measurement_type":"gram",
+	"capacity": "200",
+	"measurement_type": "gram",
 	"description": "",
 	"cart_status": "false",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/patanjali-kali-mirch-papad.jpg"
 }, {
 	"name": "namkeen",
 	"price": "65",
-	"capacity":"250",
-	"measurement_type":"gram",
+	"capacity": "250",
+	"measurement_type": "gram",
 	"description": "tasty",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/blank_image.png",
 	"cart_status": "false"
 }, {
 	"name": "jdh",
 	"price": "58",
-	"capacity":"500",
-	"measurement_type":"gram",
+	"capacity": "500",
+	"measurement_type": "gram",
 	"description": "ndnd",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/blank_image.png",
 	"cart_status": "false"
 }, {
 	"name": "bsbsb",
 	"price": "68",
-	"capacity":"200",
-	"measurement_type":"gram",
+	"capacity": "200",
+	"measurement_type": "gram",
 	"description": "hxbd",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/blank_image.png",
 	"cart_status": "false"
 }, {
 	"name": "Namkeen",
 	"price": "68",
-	"capacity":"250",
-	"measurement_type":"gram",
+	"capacity": "250",
+	"measurement_type": "gram",
 	"description": "tasty",
 	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/blank_image.png",
 	"cart_status": "false"
