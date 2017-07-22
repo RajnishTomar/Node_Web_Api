@@ -1,1 +1,63 @@
-{"91b965e53fddd8428215c70ff97d575ab304256ea3834a2b4b8e29a81f32":[{"name":"Vegetables","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/Vegetables.jpg"},{"name":"Fruits","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/Fruits.jpg"},{"name":"Patanjali","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali.jpg"}],"88b766f10d8acb4b8714801ffe501b0ded527f74f3":[{"name":"Fruits","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/Fruits.jpg"},{"name":"Vegetables","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/Vegetables.jpg"},{"name":"Plants","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/plants.jpg"},{"name":"Grocery","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/grocery.jpg"},{"name":"Non fruit Beverage","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/no-fruit-beverages.jpg"},{"name":"Patanjali","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/patanjali.jpg"}],"97b762ea2480c2489d16cf0ea00d1e029b0c2721a980097d12d525ab1d383200c0":[{"name":"Fruits","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/Fruits.jpg"},{"name":"Vegetables","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/Vegetables.jpg"},{"name":"Plants","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/Plants.jpg"},{"name":"Grocery","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/Grocery.jpg"},{"name":"Non fruit Beverage","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/Non fruit Beverage.jpg"},{"name":"Patanjali","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali.jpg"}],"88b966ed2692ea5a8913c113bf5e4156ee5d7c79f5d814":[{"name":"Fruits","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/Fruits.jpg"},{"name":"Vegetables","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/Vegetables.jpg"},{"name":"Plants","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/plants.jpg"},{"name":"Patajali","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/patanjali.jpg"}]}
+{
+	"91b965e53fddd8428215c70ff97d575ab304256ea3834a2b4b8e29a81f32": [{
+		"name": "Vegetables",
+		"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Vegetables.jpg"
+	}, {
+		"name": "Fruits",
+		"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Fruits.jpg"
+	}, {
+		"name": "Patanjali",
+		"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali.jpg"
+	}],
+	"88b766f10d8acb4b8714801ffe501b0ded527f74f3": [{
+		"name": "Fruits",
+		"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Fruits.jpg"
+	}, {
+		"name": "Vegetables",
+		"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Vegetables.jpg"
+	}, {
+		"name": "Plants",
+		"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/plants.jpg"
+	}, {
+		"name": "Grocery",
+		"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/grocery.jpg"
+	}, {
+		"name": "Non fruit Beverage",
+		"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/no-fruit-beverages.jpg"
+	}, {
+		"name": "Patanjali",
+		"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/patanjali.jpg"
+	}],
+	"97b762ea2480c2489d16cf0ea00d1e029b0c2721a980097d12d525ab1d383200c0": [{
+		"name": "Fruits",
+		"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Fruits.jpg"
+	}, {
+		"name": "Vegetables",
+		"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Vegetables.jpg"
+	}, {
+		"name": "Plants",
+		"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Plants.jpg"
+	}, {
+		"name": "Grocery",
+		"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Grocery.jpg"
+	}, {
+		"name": "Non fruit Beverage",
+		"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Non fruit Beverage.jpg"
+	}, {
+		"name": "Patanjali",
+		"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali.jpg"
+	}],
+	"88b966ed2692ea5a8913c113bf5e4156ee5d7c79f5d814": [{
+		"name": "Fruits",
+		"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Fruits.jpg"
+	}, {
+		"name": "Vegetables",
+		"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Vegetables.jpg"
+	}, {
+		"name": "Plants",
+		"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/plants.jpg"
+	}, {
+		"name": "Patajali",
+		"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/patanjali.jpg"
+	}]
+}
