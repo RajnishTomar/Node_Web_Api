@@ -1,1 +1,153 @@
-[{"name":"Apple","price_per_kg":"100","price_per_unit":"","description":"delicious fruit","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/blank_image.png","cart_status":"false"},{"name":"Banana","price_per_kg":"50","price_per_unit":"","description":"per piece arround 100 gm","cart_status":"false","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/banana.jpg"},{"name":"Watermelon","price_per_kg":"20","price_per_unit":"","description":"per piece arround 2 kg","cart_status":"false","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/watermelon.jpg"},{"name":"Grapes","price_per_kg":"140","price_per_unit":"","description":"","cart_status":"false","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/green-grapes.jpg"},{"name":"Grapes-black","price_per_kg":"160","price_per_unit":"","description":"","cart_status":"false","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/black-grapes.jpeg"},{"name":"Mango-Safeda","price_per_kg":"40","price_per_unit":"","description":"per piece arround 200 gm","cart_status":"false","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/mango-safeda.jpg"},{"name":"Pomegranate","price_per_kg":"60","price_per_unit":"","description":"per piece arround 200 gm","cart_status":"false","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/pomegranate-new.png"},{"name":"Papaya","price_per_kg":"40","price_per_unit":"","description":"per piece arround 1 kg","cart_status":"false","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/Papaya.jpg"},{"name":"Muskmelon","price_per_kg":"30","price_per_unit":"","description":"per piece arround 1.5 gm","cart_status":"false","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/muskmelon.jpg"},{"name":"Muskmelon-striped","price_per_kg":"40","price_per_unit":"","description":"per piece arround 1 kg","cart_status":"false","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/muskmelon-striped.jpg"},{"name":"Mosambi","price_per_kg":"70","price_per_unit":"","description":"per piece arround 100 gm","cart_status":"false","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/mosambi.jpg"},{"name":"Pineapple","price_per_kg":"70","price_per_unit":"","description":"per piece arround 1 kg","cart_status":"false","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/pineapple.jpg"},{"name":"Cherries","price_per_kg":"300","price_per_unit":"","description":"","cart_status":"false","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/cherries.jpg"},{"name":"Orange","price_per_kg":"120","price_per_unit":"","description":"per piece arround 100 gm","cart_status":"false","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/orange-new.png"},{"name":"Litchi","price_per_kg":"200","price_per_unit":"","description":"","cart_status":"false","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/litchi.jpg"},{"name":"Jamun","price_per_kg":"250","price_per_unit":"","description":"","cart_status":"false","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/jamun.jpg"},{"name":"Coconut","price_per_kg":"","price_per_unit":"","description":"Natural coconut, feel fresh in hot summer day.","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/coconut.png","cart_status":"false"},{"name":"Coconut","price_per_kg":"","price_per_unit":"","description":"Natural coconut, feel fresh in hot summer day.","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/coconut.png","cart_status":"false"},{"name":"kinu","price_per_kg":"60","price_per_unit":"","description":"tasty and delicious","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/blank_image.png","cart_status":"false"},{"name":"kasmiri apple","price_per_kg":"120","price_per_unit":"","description":"delixious fruit","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/blank_image.png","cart_status":"false"},{"name":"Mango shake","price_per_kg":"","price_per_unit":"","description":"delicious mango juice","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/blank_image.png","cart_status":"false"},{"name":"Coconut","price_per_kg":"","price_per_unit":"","description":"Natural coconut, feel fresh in hot summer day.","url":"https://s3.ap-south-1.amazonaws.com/sabjibazzar/coconut.png","cart_status":"false"}]
+[{
+	"name": "Apple",
+	"price": "100",
+	"quantity":"1",
+	"measurement_type":"kg",
+	"description": "delicious fruit",
+	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/blank_image.png",
+	"cart_status": "false"
+}, {
+	"name": "Banana",
+	"price": "50",
+	"quantity":"12",
+	"measurement_type":"unit",
+	"description": "per piece arround 100 gm",
+	"cart_status": "false",
+	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/banana.jpg"
+}, {
+	"name": "Watermelon",
+	"price": "20",
+	"quantity":"1",
+	"measurement_type":"kg",
+	"description": "per piece arround 2 kg",
+	"cart_status": "false",
+	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/watermelon.jpg"
+}, {
+	"name": "Grapes",
+	"price": "140",
+	"quantity":"1",
+	"measurement_type":"kg",
+	"description": "",
+	"cart_status": "false",
+	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/green-grapes.jpg"
+}, {
+	"name": "Grapes-black",
+	"price": "160",
+	"quantity":"1",
+	"measurement_type":"kg",
+	"description": "",
+	"cart_status": "false",
+	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/black-grapes.jpeg"
+}, {
+	"name": "Mango-Safeda",
+	"price": "40",
+	"quantity":"1",
+	"measurement_type":"kg",
+	"description": "per piece arround 200 gm",
+	"cart_status": "false",
+	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/mango-safeda.jpg"
+}, {
+	"name": "Pomegranate",
+	"price": "60",
+	"quantity":"1",
+	"measurement_type":"kg",
+	"description": "per piece arround 200 gm",
+	"cart_status": "false",
+	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/pomegranate-new.png"
+}, {
+	"name": "Papaya",
+	"price": "40",
+	"quantity":"1",
+	"measurement_type":"kg",
+	"description": "per piece arround 1 kg",
+	"cart_status": "false",
+	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Papaya.jpg"
+}, {
+	"name": "Muskmelon",
+	"price": "30",
+	"quantity":"1",
+	"measurement_type":"kg",
+	"description": "per piece arround 1.5 gm",
+	"cart_status": "false",
+	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/muskmelon.jpg"
+}, {
+	"name": "Muskmelon-striped",
+	"price": "40",
+	"quantity":"1",
+	"measurement_type":"kg",
+	"description": "per piece arround 1 kg",
+	"cart_status": "false",
+	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/muskmelon-striped.jpg"
+}, {
+	"name": "Mosambi",
+	"price": "70",
+	"quantity":"1",
+	"measurement_type":"kg",
+	"description": "per piece arround 100 gm",
+	"cart_status": "false",
+	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/mosambi.jpg"
+}, {
+	"name": "Pineapple",
+	"price": "70",
+	"quantity":"1",
+	"measurement_type":"kg",
+	"description": "per piece arround 1 kg",
+	"cart_status": "false",
+	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/pineapple.jpg"
+}, {
+	"name": "Cherries",
+	"price": "300",
+	"quantity":"1",
+	"measurement_type":"kg",
+	"description": "",
+	"cart_status": "false",
+	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/cherries.jpg"
+}, {
+	"name": "Orange",
+	"price": "120",
+	"quantity":"1",
+	"measurement_type":"kg",
+	"description": "per piece arround 100 gm",
+	"cart_status": "false",
+	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/orange-new.png"
+}, {
+	"name": "Litchi",
+	"price": "200",
+	"quantity":"1",
+	"measurement_type":"kg",
+	"description": "",
+	"cart_status": "false",
+	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/litchi.jpg"
+}, {
+	"name": "Jamun",
+	"price": "250",
+	"quantity":"1",
+	"measurement_type":"kg",
+	"description": "",
+	"cart_status": "false",
+	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/jamun.jpg"
+}, {
+	"name": "Coconut",
+	"price": "40",
+	"quantity":"1",
+	"measurement_type":"unit",
+	"description": "Natural coconut, feel fresh in hot summer day.",
+	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/coconut.png",
+	"cart_status": "false"
+},{
+	"name": "kinu",
+	"price": "60",
+	"quantity":"1",
+	"measurement_type":"kg",
+	"description": "tasty and delicious",
+	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/blank_image.png",
+	"cart_status": "false"
+}, {
+	"name": "kasmiri apple",
+	"price": "120",
+	"quantity":"1",
+	"measurement_type":"kg",
+	"description": "delixious fruit",
+	"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/blank_image.png",
+	"cart_status": "false"
+}]
