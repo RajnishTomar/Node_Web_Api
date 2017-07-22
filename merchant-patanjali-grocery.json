@@ -3,109 +3,85 @@
 		"name": "Patanjali Doodh Biscuits",
 		"description": "nsnns",
 		"url": "https://sabjibazzar.s3.ap-south-1.amazonaws.com/1499857202399.png",
-		"price_per_kg": "",
-		"price_per_unit": "",
 		"price": "10",
-		"quantity_kg": "",
-		"quantity_gm": "100"
+	    "capacity":"100",
+	    "measurement_type":"gram",
 	}, {
 		"name": "Nariyal Biscuit",
-		"price_per_kg": "",
-		"price_per_unit": "",
 		"description": "",
 		"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/Patanjali-Nariyal-Biscuits.png",
 		"price": "10",
-		"quantity_gm": "100",
-		"quantity_kg": ""
+	    "capacity":"100",
+	    "measurement_type":"gram",
 	}, {
 		"name": "Cumin Whole / ज़ीरा दाना",
-		"price_per_kg": "",
-		"price_per_unit": "",
 		"description": "",
 		"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/patanjali-cumin-whole.png",
 		"price": "40",
-		"quantity_gm": "100",
-		"quantity_kg": ""
+	    "capacity":"100",
+	    "measurement_type":"gram",
 	}, {
 		"name": "Coriander Powder / िपसा धिनया",
-		"price_per_kg": "",
-		"price_per_unit": "",
 		"description": "",
 		"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/Patanjali-Coriande-Powder.png",
 		"price": "30",
-		"quantity_gm": "100",
-		"quantity_kg": ""
+	    "capacity":"100",
+	    "measurement_type":"gram",
 	}, {
 		"name": "Ajowan / अजवाइन",
-		"price_per_kg": "",
-		"price_per_unit": "",
 		"description": "",
 		"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/pachak-Ajwain.png",
 		"price": "38",
-		"quantity_gm": "100",
-		"quantity_kg": ""
+	    "capacity":"100",
+	    "measurement_type":"gram",
 	}, {
 		"name": "Amla Candy / अमला क􀀵 डी",
-		"price_per_kg": "",
-		"price_per_unit": "",
 		"description": "",
 		"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/amla-candy.png",
 		"price": "140",
-		"quantity_gm": "500",
-		"quantity_kg": ""
+	    "capacity":"500",
+	    "measurement_type":"gram",
 	}, {
 		"name": "Amla Chatpata / अमला चटपटा",
-		"price_per_kg": "",
-		"price_per_unit": "",
 		"description": "",
 		"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/amla-chatpata-candy.png",
 		"price": "145",
-		"quantity_gm": "500",
-		"quantity_kg": ""
+	    "capacity":"500",
+	    "measurement_type":"gram",
 	}, {
 		"name": "Bel Candy / बेल क􀀵 डी",
-		"price_per_kg": "",
-		"price_per_unit": "",
 		"description": "",
 		"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/bel-candy.png",
 		"price": "140",
-		"quantity_gm": "500",
-		"quantity_kg": ""
+	    "capacity":"500",
+	    "measurement_type":"gram",
 	}, {
 		"name": "Mix Fruit Jam / िम􀀔स फू􀀘 ट जैम",
-		"price_per_kg": "",
-		"price_per_unit": "",
 		"description": "",
 		"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/Patanjali-Mixed-Fruit-Jam.jpg",
 		"price": "70",
-		"quantity_gm": "500",
-		"quantity_kg": ""
+	    "capacity":"500",
+	    "measurement_type":"gram",
 	}, {
 		"name": "Pineapple Jam / पाइनए􀀻पल जैम",
-		"price_per_kg": "",
-		"price_per_unit": "",
 		"description": "",
 		"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/patanjali-pineapple-jam.jpg",
 		"price": "70",
-		"quantity_gm": "500",
-		"quantity_kg": ""
+	    "capacity":"500",
+	    "measurement_type":"gram",
 	}, {
 		"name": "Guava Jam / अम􀁅द जैम",
-		"price_per_kg": "",
-		"price_per_unit": "",
 		"description": "",
 		"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/patanjali-guava-jam.jpg",
 		"price": "150",
-		"quantity_gm": "500",
-		"quantity_kg": ""
+	    "capacity":"500",
+	    "measurement_type":"gram",
 	}, {
 		"name": "Apple Murraba / सबे मरु 􀁄बा",
-		"price_per_kg": "",
-		"price_per_unit": "",
 		"description": "",
 		"url": "https://s3.ap-south-1.amazonaws.com/sabjibazzar/Patanjali/Grocery/spices/Patanjali+Apple+Murabba.jpeg",
 		"price": "120",
-		"quantity_gm": "",
-		"quantity_kg": "1"
+	    "capacity":"1",
+	    "measurement_type":"kg",
 	}]
 }
