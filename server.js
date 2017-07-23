@@ -259,11 +259,12 @@ app.post('/addProductCategoryItems', function (req, res) { //to add/edit more it
        fs.writeFile("./" + fileName+".json", json, 'utf8',function(err){
           if(err){ 
           throw err;
-          return;
+          
+          var dict = {"status": "true", "message":"Added successfully"};
+          res.end( JSON.stringify(dict));
           }
        });
-       var dict = {"status": "true", "message":"Added successfully"};
-       res.end( JSON.stringify(dict));
+       
    });
       
 })
