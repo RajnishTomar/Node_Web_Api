@@ -21,6 +21,34 @@ app.use(bodyParser.json());
   
 //**********************************User Action methods********************************//
 
+app.post('/saveUserDeviceToken', function (req, res) {
+   
+   reqJson =  req.body;
+   console.log( reqJson );
+   const deviceToken= reqJson["device_token"];
+   const userAuthToken =  reqJson["user_token"];
+   console.log( deviceToken );
+   console.log( userAuthToken );
+   
+   // First read existing users.
+   fs.readFile("./" + "device-id.json", 'utf8', function (err, data) {
+       var dataDict = JSON.parse( data );
+       dataDict[deviceToken] =  userAuthToken;
+       dataDict[userAuthToken] = deviceToken;
+       
+       json = JSON.stringify(dataDict);
+       fs.writeFile("./" + "device-id.json", json, 'utf8',function(err){
+          if(err){ 
+          throw err;
+          }
+          console.log( "data saved" );
+          var dict = {"status": "true", "message":"Added successfully"};
+          res.end( JSON.stringify(dict));
+       });
+       
+   });
+      
+})
 
 app.get('/listUsers', function (req, res) {
 
